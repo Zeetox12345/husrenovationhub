@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -117,8 +116,27 @@ export default {
 			},
 			backgroundImage: {
 				'hero-gradient': 'linear-gradient(180deg, rgba(249,250,251,0) 0%, rgba(249,250,251,1) 100%)',
-			}
+			},
+			typography: {
+				DEFAULT: {
+					css: {
+						color: 'hsl(var(--foreground))',
+						a: {
+							color: 'hsl(var(--primary))',
+							'&:hover': {
+								color: 'hsl(var(--primary))',
+							},
+						},
+						'h1, h2, h3, h4, h5, h6': {
+							color: 'hsl(var(--foreground))',
+						},
+					},
+				},
+			},
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+		require("tailwindcss-animate"),
+		require("@tailwindcss/typography")
+	],
 } satisfies Config;

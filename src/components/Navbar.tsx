@@ -1,12 +1,13 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
+import { Container } from "./ui/container";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isTagDropdownOpen, setIsTagDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +28,10 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const toggleTagDropdown = () => {
+    setIsTagDropdownOpen(!isTagDropdownOpen);
+  };
+
   return (
     <header
       className={cn(
@@ -36,7 +41,7 @@ const Navbar = () => {
           : "bg-transparent py-5"
       )}
     >
-      <div className="container flex items-center justify-between">
+      <Container className="flex items-center justify-between">
         <Link 
           to="/" 
           className="text-xl font-semibold text-brand-blue transition-all hover:opacity-90"
@@ -54,13 +59,79 @@ const Navbar = () => {
                 Hjem
               </Link>
             </li>
-            <li>
-              <Link 
-                to="/tagrenovering" 
-                className="text-base font-medium text-gray-700 transition-all hover:text-brand-blue"
+            <li className="relative">
+              <button 
+                className="flex items-center text-base font-medium text-gray-700 transition-all hover:text-brand-blue"
+                onClick={toggleTagDropdown}
               >
                 Tagrenovering
-              </Link>
+                {isTagDropdownOpen ? (
+                  <ChevronUp className="h-4 w-4 ml-1" />
+                ) : (
+                  <ChevronDown className="h-4 w-4 ml-1" />
+                )}
+              </button>
+              
+              {isTagDropdownOpen && (
+                <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-md py-2 z-50">
+                  <Link 
+                    to="/tagrenovering" 
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    onClick={() => setIsTagDropdownOpen(false)}
+                  >
+                    Tagrenovering
+                  </Link>
+                  <Link 
+                    to="/tagrenovering-kobenhavn" 
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    onClick={() => setIsTagDropdownOpen(false)}
+                  >
+                    Tagrenovering København
+                  </Link>
+                  <Link 
+                    to="/tagrenovering-aarhus" 
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    onClick={() => setIsTagDropdownOpen(false)}
+                  >
+                    Tagrenovering Aarhus
+                  </Link>
+                  <Link 
+                    to="/tagrenovering-odense" 
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    onClick={() => setIsTagDropdownOpen(false)}
+                  >
+                    Tagrenovering Odense
+                  </Link>
+                  <Link 
+                    to="/tagrenovering-aalborg" 
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    onClick={() => setIsTagDropdownOpen(false)}
+                  >
+                    Tagrenovering Aalborg
+                  </Link>
+                  <Link 
+                    to="/tagrenovering-esbjerg" 
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    onClick={() => setIsTagDropdownOpen(false)}
+                  >
+                    Tagrenovering Esbjerg
+                  </Link>
+                  <Link 
+                    to="/tagrenovering-randers" 
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    onClick={() => setIsTagDropdownOpen(false)}
+                  >
+                    Tagrenovering Randers
+                  </Link>
+                  <Link 
+                    to="/tagrenovering-kolding" 
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    onClick={() => setIsTagDropdownOpen(false)}
+                  >
+                    Tagrenovering Kolding
+                  </Link>
+                </div>
+              )}
             </li>
           </ul>
         </nav>
@@ -76,7 +147,7 @@ const Navbar = () => {
             <Menu className="h-6 w-6 text-gray-700" />
           )}
         </button>
-      </div>
+      </Container>
 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
@@ -99,6 +170,69 @@ const Navbar = () => {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Tagrenovering
+                </Link>
+              </li>
+              <li className="pl-4 pt-2">
+                <Link 
+                  to="/tagrenovering-kobenhavn" 
+                  className="text-lg font-medium text-gray-700"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Tagrenovering København
+                </Link>
+              </li>
+              <li className="pl-4">
+                <Link 
+                  to="/tagrenovering-aarhus" 
+                  className="text-lg font-medium text-gray-700"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Tagrenovering Aarhus
+                </Link>
+              </li>
+              <li className="pl-4">
+                <Link 
+                  to="/tagrenovering-odense" 
+                  className="text-lg font-medium text-gray-700"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Tagrenovering Odense
+                </Link>
+              </li>
+              <li className="pl-4">
+                <Link 
+                  to="/tagrenovering-aalborg" 
+                  className="text-lg font-medium text-gray-700"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Tagrenovering Aalborg
+                </Link>
+              </li>
+              <li className="pl-4">
+                <Link 
+                  to="/tagrenovering-esbjerg" 
+                  className="text-lg font-medium text-gray-700"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Tagrenovering Esbjerg
+                </Link>
+              </li>
+              <li className="pl-4">
+                <Link 
+                  to="/tagrenovering-randers" 
+                  className="text-lg font-medium text-gray-700"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Tagrenovering Randers
+                </Link>
+              </li>
+              <li className="pl-4">
+                <Link 
+                  to="/tagrenovering-kolding" 
+                  className="text-lg font-medium text-gray-700"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Tagrenovering Kolding
                 </Link>
               </li>
             </ul>

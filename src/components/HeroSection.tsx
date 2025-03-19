@@ -1,6 +1,6 @@
-
 import { useEffect, useRef } from "react";
 import CTAButton from "./CTAButton";
+import { Container } from "./ui/container";
 
 interface HeroSectionProps {
   title: string;
@@ -51,8 +51,8 @@ const HeroSection = ({
         backgroundPosition: "center"
       }}
     >
-      <div className="container max-w-5xl">
-        <div className="text-center max-w-3xl mx-auto">
+      <Container size="sm">
+        <div className="text-center mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 animate-fade-in">
             {title}
           </h1>
@@ -65,7 +65,7 @@ const HeroSection = ({
             </CTAButton>
           </div>
         </div>
-      </div>
+      </Container>
       
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
     </section>
