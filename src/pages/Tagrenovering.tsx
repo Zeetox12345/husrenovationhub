@@ -24,7 +24,7 @@ const Tagrenovering = () => {
             {/* Affiliate Partner Logo */}
             <div className="mb-10 flex justify-center">
               <img 
-                src="/lovable-uploads/beff9092-bef0-4b19-8572-a1e56ebd52f1.png" 
+                src="/lovable-uploads/27978702-7d7f-40b4-b06f-43c8d47e2bf8.png" 
                 alt="3byggetilbud.dk" 
                 className="h-24 md:h-28 w-auto transform hover:scale-105 transition-transform duration-300"
               />
