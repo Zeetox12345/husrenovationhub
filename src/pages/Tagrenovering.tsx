@@ -24,7 +24,7 @@ const Tagrenovering = () => {
             {/* Affiliate Partner Logo */}
             <div className="mb-10 flex justify-center">
               <img 
-                src="/lovable-uploads/c0b4432c-6365-46ae-8225-f0c2e57525df.png" 
+                src="/lovable-uploads/a2dc3d3c-2ffd-4a00-967d-a9fb7dc4591e.png" 
                 alt="3byggetilbud.dk" 
                 className="h-24 md:h-28 w-auto transform hover:scale-105 transition-transform duration-300"
               />
@@ -42,7 +42,7 @@ const Tagrenovering = () => {
             
             <div className="mb-12 animate-fade-in" style={{ animationDelay: "0.4s" }}>
               <CTAButton href={affiliateLink} size="lg" className="w-full md:w-auto animate-pulse-soft">
-                Få dine gratis tag-tilbud nu!
+                Bestil 3 uforpligtende tilbud
               </CTAButton>
             </div>
             
@@ -149,7 +149,7 @@ const Tagrenovering = () => {
                 Vores erfarne håndværkere kan hjælpe dig med at vurdere tagets tilstand og anbefale den rette løsning for dit hjem.
               </p>
               <CTAButton href={affiliateLink} variant="primary">
-                Få en gratis vurdering
+                Bestil 3 uforpligtende tilbud
               </CTAButton>
             </div>
           </div>
@@ -175,7 +175,7 @@ const Tagrenovering = () => {
             size="lg"
             className="bg-white text-brand-blue hover:bg-gray-100 animate-pulse-soft shadow-lg"
           >
-            Få dine gratis tag-tilbud nu!
+            Bestil 3 uforpligtende tilbud
           </CTAButton>
         </div>
       </section>
