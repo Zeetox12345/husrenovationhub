@@ -18,13 +18,13 @@ const Tagrenovering = () => {
         <meta name="description" content="Få 3 gratis tilbud på tagrenovering fra professionelle håndværkere i dit lokalområde. Sammenlign priser og kvalitet uden forpligtelser." />
       </Helmet>
 
-      <div className="pt-24 md:pt-32 pb-16 md:pb-20 bg-brand-lightGray">
+      <div className="pt-24 md:pt-32 pb-16 md:pb-20">
         <div className="container">
           <div className="max-w-3xl mx-auto">
             {/* Affiliate Partner Logo */}
             <div className="mb-10 flex justify-center">
               <img 
-                src="/lovable-uploads/27978702-7d7f-40b4-b06f-43c8d47e2bf8.png" 
+                src="/lovable-uploads/c0b4432c-6365-46ae-8225-f0c2e57525df.png" 
                 alt="3byggetilbud.dk" 
                 className="h-24 md:h-28 w-auto transform hover:scale-105 transition-transform duration-300"
               />
@@ -42,7 +42,7 @@ const Tagrenovering = () => {
             
             <div className="mb-12 animate-fade-in" style={{ animationDelay: "0.4s" }}>
               <CTAButton href={affiliateLink} size="lg" className="w-full md:w-auto animate-pulse-soft">
-                Bestil 3 uforpligtende tilbud
+                Få dine gratis tag-tilbud nu!
               </CTAButton>
             </div>
             
@@ -53,7 +53,7 @@ const Tagrenovering = () => {
         </div>
       </div>
 
-      <section className="py-16 bg-gray-100">
+      <section className="py-16 bg-gray-50">
         <div className="container">
           <div className="max-w-3xl mx-auto">
             <div className="mb-12">
@@ -149,7 +149,7 @@ const Tagrenovering = () => {
                 Vores erfarne håndværkere kan hjælpe dig med at vurdere tagets tilstand og anbefale den rette løsning for dit hjem.
               </p>
               <CTAButton href={affiliateLink} variant="primary">
-                Bestil 3 uforpligtende tilbud
+                Få en gratis vurdering
               </CTAButton>
             </div>
           </div>
@@ -175,7 +175,7 @@ const Tagrenovering = () => {
             size="lg"
             className="bg-white text-brand-blue hover:bg-gray-100 animate-pulse-soft shadow-lg"
           >
-            Bestil 3 uforpligtende tilbud
+            Få dine gratis tag-tilbud nu!
           </CTAButton>
         </div>
       </section>
