@@ -62,22 +62,6 @@ const Navbar = () => {
                 Tagrenovering
               </Link>
             </li>
-            <li>
-              <a 
-                href="#" 
-                className="text-base font-medium text-gray-700 transition-all hover:text-brand-blue"
-              >
-                Facaderenovering
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#" 
-                className="text-base font-medium text-gray-700 transition-all hover:text-brand-blue"
-              >
-                Kontakt
-              </a>
-            </li>
           </ul>
         </nav>
 
@@ -116,24 +100,6 @@ const Navbar = () => {
                 >
                   Tagrenovering
                 </Link>
-              </li>
-              <li>
-                <a 
-                  href="#" 
-                  className="text-xl font-medium text-gray-800"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Facaderenovering
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#" 
-                  className="text-xl font-medium text-gray-800"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Kontakt
-                </a>
               </li>
             </ul>
           </nav>

@@ -21,6 +21,15 @@ const Tagrenovering = () => {
       <div className="pt-24 md:pt-32 pb-16 md:pb-20">
         <div className="container">
           <div className="max-w-3xl mx-auto">
+            {/* Affiliate Partner Logo */}
+            <div className="mb-10 flex justify-center">
+              <img 
+                src="/lovable-uploads/c0b4432c-6365-46ae-8225-f0c2e57525df.png" 
+                alt="3byggetilbud.dk" 
+                className="h-24 md:h-28 w-auto transform hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6 animate-fade-in">
               Få 3 Gratis Tilbud på Tagrenovering i Dag!
             </h1>
@@ -103,28 +112,28 @@ const Tagrenovering = () => {
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-gray-50 rounded-xl p-6 card-hover">
+              <div className="bg-gray-50 rounded-xl p-6 card-hover shadow-sm">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Nyt tag</h3>
                 <p className="text-gray-700">
                   Udskiftning af hele taget er nødvendigt, når skaderne er omfattende eller taget er meget gammelt. Det giver mulighed for at opdatere til nye, mere energieffektive materialer.
                 </p>
               </div>
               
-              <div className="bg-gray-50 rounded-xl p-6 card-hover">
+              <div className="bg-gray-50 rounded-xl p-6 card-hover shadow-sm">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Delvis udskiftning</h3>
                 <p className="text-gray-700">
                   Hvis kun dele af taget er beskadiget, kan det være tilstrækkeligt at udskifte de berørte områder for at spare tid og penge.
                 </p>
               </div>
               
-              <div className="bg-gray-50 rounded-xl p-6 card-hover">
+              <div className="bg-gray-50 rounded-xl p-6 card-hover shadow-sm">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Reparation</h3>
                 <p className="text-gray-700">
                   Mindre problemer som enkelte ødelagte tagsten eller mindre lækager kan ofte løses med simple reparationer uden at udskifte hele taget.
                 </p>
               </div>
               
-              <div className="bg-gray-50 rounded-xl p-6 card-hover">
+              <div className="bg-gray-50 rounded-xl p-6 card-hover shadow-sm">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Vedligeholdelse</h3>
                 <p className="text-gray-700">
                   Regelmæssig vedligeholdelse som rensning af tagrender, fjernelse af mos og alger, samt inspektion kan forlænge tagets levetid betydeligt.
@@ -132,7 +141,7 @@ const Tagrenovering = () => {
               </div>
             </div>
             
-            <div className="bg-brand-lightBlue rounded-xl p-8 text-center mb-12">
+            <div className="bg-brand-lightBlue rounded-xl p-8 text-center mb-12 shadow-md">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
                 Usikker på hvad dit tag har brug for?
               </h3>
@@ -148,9 +157,10 @@ const Tagrenovering = () => {
       </section>
 
       <section 
-        className="py-20 bg-cover bg-center" 
+        className="py-20 bg-cover bg-center shadow-inner" 
         style={{ 
-          backgroundImage: "linear-gradient(rgba(14, 165, 233, 0.85), rgba(14, 165, 233, 0.9)), url(https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?q=80&w=2070&auto=format&fit=crop)" 
+          backgroundImage: "linear-gradient(rgba(14, 165, 233, 0.85), rgba(14, 165, 233, 0.9)), url(https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?q=80&w=2070&auto=format&fit=crop)", 
+          backgroundSize: "cover"
         }}
       >
         <div className="container text-center text-white">
@@ -163,7 +173,7 @@ const Tagrenovering = () => {
           <CTAButton 
             href={affiliateLink} 
             size="lg"
-            className="bg-white text-brand-blue hover:bg-gray-100 animate-pulse-soft"
+            className="bg-white text-brand-blue hover:bg-gray-100 animate-pulse-soft shadow-lg"
           >
             Få dine gratis tag-tilbud nu!
           </CTAButton>
