@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 import CTAButton from "@/components/CTAButton";
 import TrustSignals from "@/components/TrustSignals";
+import PartnerSection from "@/components/PartnerSection";
 import { Helmet } from "react-helmet";
+import { Container } from "@/components/ui/container";
 
 const TagrenoveringEsbjerg = () => {
-  const affiliateLink = "https://example.com/affiliate/tag/esbjerg";
+  const affiliateLink = "https://www.3byggetilbud.dk/tilbud/tagrenovering/";
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -13,22 +15,24 @@ const TagrenoveringEsbjerg = () => {
   return (
     <>
       <Helmet>
-        <title>Tagrenovering i Esbjerg – Få 3 gratis tilbud på nyt tag</title>
-        <meta name="description" content="Få 3 gratis tilbud på tagrenovering fra professionelle håndværkere i Esbjerg. Sammenlign priser og kvalitet uden forpligtelser." />
+        <title>Tagrenovering i Esbjerg – Tips til tagløsninger 2025</title>
+        <meta name="description" content="Professionel tagrenovering i Esbjerg udført af erfarne tageksperter. Få skræddersyet rådgivning om tagtyper, vedligeholdelse og vejrbestandige løsninger." />
         <meta name="keywords" content="tagrenovering esbjerg, tag esbjerg, tagarbejde esbjerg, tagudskiftning esbjerg, tagreparation esbjerg" />
         <link rel="canonical" href="https://husrenovation.dk/tagrenovering-esbjerg" />
       </Helmet>
 
       <div className="pt-24 md:pt-32 pb-16 md:pb-20">
-        <div className="container">
+        <Container>
           <div className="max-w-3xl mx-auto">
             {/* Affiliate Partner Logo */}
             <div className="mb-10 flex justify-center">
-              <img 
-                src="/lovable-uploads/a2dc3d3c-2ffd-4a00-967d-a9fb7dc4591e.png" 
-                alt="3byggetilbud.dk" 
-                className="h-24 md:h-28 w-auto transform hover:scale-105 transition-transform duration-300"
-              />
+              <a href={affiliateLink} target="_blank" rel="noopener noreferrer">
+                <img 
+                  src="/lovable-uploads/a2dc3d3c-2ffd-4a00-967d-a9fb7dc4591e.png" 
+                  alt="3byggetilbud.dk" 
+                  className="h-24 md:h-28 w-auto transform hover:scale-105 transition-transform duration-300"
+                />
+              </a>
             </div>
             
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6 animate-fade-in">
@@ -38,7 +42,7 @@ const TagrenoveringEsbjerg = () => {
             <p className="text-xl text-gray-700 mb-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
               Leder du efter en pålidelig løsning til tagrenovering i Esbjerg? 
               Vi hjælper dig med at finde de bedste håndværkere i Esbjerg og omegn. 
-              Spar tid og penge ved at modtage 3 gratis og uforpligtende tilbud fra professionelle firmaer i Sydvestjylland.
+              Spar tid og penge ved at modtage 3 gratis og uforpligtende tilbud fra professionelle firma i Esbjerg.
             </p>
             
             <div className="mb-12 animate-fade-in" style={{ animationDelay: "0.4s" }}>
@@ -46,12 +50,14 @@ const TagrenoveringEsbjerg = () => {
                 Bestil 3 uforpligtende tilbud i Esbjerg
               </CTAButton>
             </div>
-            
-            <div className="mb-16">
-              <TrustSignals />
-            </div>
+
+            {/* Partner Section */}
+            <PartnerSection city="Esbjerg" affiliateLink={affiliateLink} />
+
+            {/* Trust Signals */}
+            <TrustSignals />
           </div>
-        </div>
+        </Container>
       </div>
 
       <section className="py-16 bg-gray-50">

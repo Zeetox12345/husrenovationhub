@@ -1,11 +1,11 @@
-
 import { useEffect } from "react";
 import CTAButton from "@/components/CTAButton";
 import TrustSignals from "@/components/TrustSignals";
+import PartnerSection from "@/components/PartnerSection";
 import { Helmet } from "react-helmet";
 
 const Tagrenovering = () => {
-  const affiliateLink = "https://example.com/affiliate/tag";
+  const affiliateLink = "https://www.3byggetilbud.dk/tilbud/tagrenovering/";
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -14,8 +14,9 @@ const Tagrenovering = () => {
   return (
     <>
       <Helmet>
-        <title>Tagrenovering i Danmark – Få 3 gratis tilbud på nyt tag</title>
-        <meta name="description" content="Få 3 gratis tilbud på tagrenovering fra professionelle håndværkere i dit lokalområde. Sammenlign priser og kvalitet uden forpligtelser." />
+        <title>Tagrenovering i Danmark – Tips til tagprojekt 2025</title>
+        <meta name="description" content="Find kvalificerede tageksperter i dit lokalområde. Få vejledning om materialer, priser og løsninger til dit tagrenoveringsprojekt fra erfarne fagfolk." />
+        <meta name="keywords" content="tagrenovering, nyt tag, tagarbejde, tagudskiftning, tagreparation, tageksperter, tagløsninger" />
       </Helmet>
 
       <div className="pt-24 md:pt-32 pb-16 md:pb-20">
@@ -23,11 +24,13 @@ const Tagrenovering = () => {
           <div className="max-w-3xl mx-auto">
             {/* Affiliate Partner Logo */}
             <div className="mb-10 flex justify-center">
-              <img 
-                src="/lovable-uploads/a2dc3d3c-2ffd-4a00-967d-a9fb7dc4591e.png" 
-                alt="3byggetilbud.dk" 
-                className="h-24 md:h-28 w-auto transform hover:scale-105 transition-transform duration-300"
-              />
+              <a href={affiliateLink} target="_blank" rel="noopener noreferrer">
+                <img 
+                  src="/lovable-uploads/a2dc3d3c-2ffd-4a00-967d-a9fb7dc4591e.png" 
+                  alt="3byggetilbud.dk" 
+                  className="h-24 md:h-28 w-auto transform hover:scale-105 transition-transform duration-300"
+                />
+              </a>
             </div>
             
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6 animate-fade-in">
@@ -45,6 +48,9 @@ const Tagrenovering = () => {
                 Bestil 3 uforpligtende tilbud
               </CTAButton>
             </div>
+            
+            {/* Partner Section */}
+            <PartnerSection city="Danmark" affiliateLink={affiliateLink} />
             
             <div className="mb-16">
               <TrustSignals />
@@ -151,6 +157,45 @@ const Tagrenovering = () => {
               <CTAButton href={affiliateLink} variant="primary">
                 Bestil 3 uforpligtende tilbud
               </CTAButton>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-gray-50">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-white rounded-xl p-8 border border-brand-blue shadow-md">
+              <div className="flex flex-col md:flex-row items-center mb-6">
+                <a href={affiliateLink} target="_blank" rel="noopener noreferrer">
+                  <img 
+                    src="/lovable-uploads/a2dc3d3c-2ffd-4a00-967d-a9fb7dc4591e.png" 
+                    alt="3byggetilbud.dk" 
+                    className="h-16 w-auto mb-4 md:mb-0 md:mr-6"
+                  />
+                </a>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center md:text-left">
+                  Danmarks største formidler af byggeopgaver
+                </h2>
+              </div>
+              
+              <div className="space-y-4 text-gray-700">
+                <p>
+                  <a href={affiliateLink} target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-semibold">3byggetilbud.dk</a> formidler årligt mellem 70.000 og 100.000 bygge- og renoveringsprojekter og er dermed Danmarks klart største formidler af byggeopgaver.
+                </p>
+                <p>
+                  Hos <a href={affiliateLink} target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-semibold">3byggetilbud.dk</a> kan private boligejere, erhvervsdrivende og boligforeninger indhente 3 tilbud på ethvert byggeprojekt eller renoveringsopgave. 
+                </p>
+                <p>
+                  <a href={affiliateLink} target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-semibold">3byggetilbud.dk</a> har et landsdækkende netværk af flere tusinde håndværkerfirmaer og har været i branchen for formidling af byggeopgaver siden år 2000.
+                </p>
+              </div>
+              
+              <div className="mt-6 text-center">
+                <CTAButton href={affiliateLink} variant="primary">
+                  Få 3 gratis og uforpligtende tilbud
+                </CTAButton>
+              </div>
             </div>
           </div>
         </div>

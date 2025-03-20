@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 import CTAButton from "@/components/CTAButton";
 import TrustSignals from "@/components/TrustSignals";
+import PartnerSection from "@/components/PartnerSection";
 import { Helmet } from "react-helmet";
 import { Container } from "@/components/ui/container";
 
 const TagrenoveringKobenhavn = () => {
-  const affiliateLink = "https://example.com/affiliate/tag/kobenhavn";
+  const affiliateLink = "https://www.3byggetilbud.dk/tilbud/tagrenovering/";
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -14,8 +15,8 @@ const TagrenoveringKobenhavn = () => {
   return (
     <>
       <Helmet>
-        <title>Tagrenovering i København – Få 3 gratis tilbud på nyt tag</title>
-        <meta name="description" content="Få 3 gratis tilbud på tagrenovering fra professionelle håndværkere i København. Sammenlign priser og kvalitet uden forpligtelser." />
+        <title>Tagrenovering i København – Tips til tagarbejde 2025</title>
+        <meta name="description" content="Kvalificeret tagrenovering i København udført af certificerede tageksperter. Få professionel rådgivning om materialevalg, holdbarhed og energioptimering." />
         <meta name="keywords" content="tagrenovering københavn, tag københavn, tagarbejde københavn, tagudskiftning københavn, tagreparation københavn" />
         <link rel="canonical" href="https://husrenovation.dk/tagrenovering-kobenhavn" />
       </Helmet>
@@ -25,11 +26,13 @@ const TagrenoveringKobenhavn = () => {
           <div className="max-w-3xl mx-auto">
             {/* Affiliate Partner Logo */}
             <div className="mb-10 flex justify-center">
-              <img 
-                src="/lovable-uploads/a2dc3d3c-2ffd-4a00-967d-a9fb7dc4591e.png" 
-                alt="3byggetilbud.dk" 
-                className="h-24 md:h-28 w-auto transform hover:scale-105 transition-transform duration-300"
-              />
+              <a href={affiliateLink} target="_blank" rel="noopener noreferrer">
+                <img 
+                  src="/lovable-uploads/a2dc3d3c-2ffd-4a00-967d-a9fb7dc4591e.png" 
+                  alt="3byggetilbud.dk" 
+                  className="h-24 md:h-28 w-auto transform hover:scale-105 transition-transform duration-300"
+                />
+              </a>
             </div>
             
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6 animate-fade-in">
@@ -47,10 +50,12 @@ const TagrenoveringKobenhavn = () => {
                 Bestil 3 uforpligtende tilbud i København
               </CTAButton>
             </div>
-            
-            <div className="mb-16">
-              <TrustSignals />
-            </div>
+
+            {/* Partner Section */}
+            <PartnerSection city="København" affiliateLink={affiliateLink} />
+
+            {/* Trust Signals */}
+            <TrustSignals />
           </div>
         </Container>
       </div>

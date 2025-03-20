@@ -28,6 +28,16 @@ const Footer = () => {
                   Tagrenovering
                 </Link>
               </li>
+              <li>
+                <Link to="/facaderenovering" className="text-base text-gray-600 hover:text-brand-blue transition-colors">
+                  Facaderenovering
+                </Link>
+              </li>
+              <li>
+                <Link to="/vinduer" className="text-base text-gray-600 hover:text-brand-blue transition-colors">
+                  Vinduer
+                </Link>
+              </li>
             </ul>
           </div>
           

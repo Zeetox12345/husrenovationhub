@@ -12,6 +12,8 @@ import TagrenoveringAalborg from "./pages/tagrenovering/TagrenoveringAalborg";
 import TagrenoveringEsbjerg from "./pages/tagrenovering/TagrenoveringEsbjerg";
 import TagrenoveringRanders from "./pages/tagrenovering/TagrenoveringRanders";
 import TagrenoveringKolding from "./pages/tagrenovering/TagrenoveringKolding";
+import Facaderenovering from "./pages/Facaderenovering";
+import Vinduer from "./pages/Vinduer";
 import NotFound from "./pages/NotFound";
 import Privatlivspolitik from "./pages/Privatlivspolitik";
 import Cookies from "./pages/Cookies";
@@ -39,6 +41,8 @@ const App = () => (
               <Route path="/tagrenovering-esbjerg" element={<TagrenoveringEsbjerg />} />
               <Route path="/tagrenovering-randers" element={<TagrenoveringRanders />} />
               <Route path="/tagrenovering-kolding" element={<TagrenoveringKolding />} />
+              <Route path="/facaderenovering" element={<Facaderenovering />} />
+              <Route path="/vinduer" element={<Vinduer />} />
               <Route path="/privatlivspolitik" element={<Privatlivspolitik />} />
               <Route path="/cookies" element={<Cookies />} />
               <Route path="*" element={<NotFound />} />

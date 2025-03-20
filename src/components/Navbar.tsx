@@ -133,6 +133,22 @@ const Navbar = () => {
                 </div>
               )}
             </li>
+            <li>
+              <Link 
+                to="/facaderenovering" 
+                className="text-base font-medium text-gray-700 transition-all hover:text-brand-blue"
+              >
+                Facaderenovering
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/vinduer" 
+                className="text-base font-medium text-gray-700 transition-all hover:text-brand-blue"
+              >
+                Vinduer
+              </Link>
+            </li>
           </ul>
         </nav>
 
@@ -233,6 +249,24 @@ const Navbar = () => {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Tagrenovering Kolding
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/facaderenovering" 
+                  className="text-xl font-medium text-gray-800"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Facaderenovering
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/vinduer" 
+                  className="text-xl font-medium text-gray-800"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Vinduer
                 </Link>
               </li>
             </ul>
