@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Brand and Description */}
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="text-xl font-semibold text-brand-blue hover:text-brand-blue/90 transition-colors">
-              husrenovation.dk
+              renoverbolig.dk
             </Link>
             <p className="mt-4 text-gray-600 max-w-md">
               Vi hjælper dig med at finde de bedste håndværkere til dit renoveringsprojekt, så du kan spare tid og penge.
@@ -65,7 +65,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center text-gray-500">
           <p className="text-sm mb-4 md:mb-0">
-            © {currentYear} husrenovation.dk. Alle rettigheder forbeholdes.
+            © {currentYear} renoverbolig.dk. Alle rettigheder forbeholdes.
           </p>
           
           {/* Quick Links */}

@@ -10,8 +10,8 @@ const Privatlivspolitik = () => {
   return (
     <>
       <Helmet>
-        <title>Privatlivspolitik | husrenovation.dk</title>
-        <meta name="description" content="Læs husrenovation.dk's privatlivspolitik og få information om, hvordan vi behandler og beskytter dine personoplysninger." />
+        <title>Privatlivspolitik | renoverbolig.dk</title>
+        <meta name="description" content="Læs renoverbolig.dk's privatlivspolitik og få information om, hvordan vi behandler og beskytter dine personoplysninger." />
       </Helmet>
 
       <div className="pt-28 md:pt-32 pb-16 md:pb-20">
@@ -26,12 +26,12 @@ const Privatlivspolitik = () => {
 
               <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">1. Introduktion</h2>
               <p>
-                På husrenovation.dk respekterer vi dit privatliv og er forpligtet til at beskytte dine personoplysninger. Denne privatlivspolitik informerer dig om, hvordan vi behandler dine personoplysninger, når du besøger vores hjemmeside og benytter vores tjenester, samt om dine rettigheder i forhold til databeskyttelse.
+                På renoverbolig.dk respekterer vi dit privatliv og er forpligtet til at beskytte dine personoplysninger. Denne privatlivspolitik informerer dig om, hvordan vi behandler dine personoplysninger, når du besøger vores hjemmeside og benytter vores tjenester, samt om dine rettigheder i forhold til databeskyttelse.
               </p>
               
               <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">2. Dataansvarlig</h2>
               <p>
-                husrenovation.dk er dataansvarlig for behandlingen af de personoplysninger, som vi indsamler om dig.
+                renoverbolig.dk er dataansvarlig for behandlingen af de personoplysninger, som vi indsamler om dig.
               </p>
               
               <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">3. Personoplysninger vi indsamler</h2>

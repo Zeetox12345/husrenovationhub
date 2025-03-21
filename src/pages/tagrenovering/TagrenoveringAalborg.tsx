@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 import { Container } from "@/components/ui/container";
 
 const TagrenoveringAalborg = () => {
-  const affiliateLink = "https://www.3byggetilbud.dk/tilbud/tagrenovering/";
+  const affiliateLink = "https://www.partner-ads.com/dk/c/p/53649/b/25692/https://www.3byggetilbud.dk/tilbud/tagrenovering/";
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -18,7 +18,7 @@ const TagrenoveringAalborg = () => {
         <title>Tagrenovering i Aalborg – Tips til tagudskiftning 2025</title>
         <meta name="description" content="Professionel tagrenovering i Aalborg med fokus på kvalitet og holdbarhed. Få specialistvejledning om tagtyper, materialer og energieffektive løsninger." />
         <meta name="keywords" content="tagrenovering aalborg, tag aalborg, tagarbejde aalborg, tagudskiftning aalborg, tagreparation aalborg" />
-        <link rel="canonical" href="https://husrenovation.dk/tagrenovering-aalborg" />
+        <link rel="canonical" href="https://renoverbolig.dk/tagrenovering-aalborg" />
       </Helmet>
 
       <div className="pt-24 md:pt-32 pb-16 md:pb-20">

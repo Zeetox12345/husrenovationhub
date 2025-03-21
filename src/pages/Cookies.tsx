@@ -10,8 +10,8 @@ const Cookies = () => {
   return (
     <>
       <Helmet>
-        <title>Cookie Politik | husrenovation.dk</title>
-        <meta name="description" content="Læs husrenovation.dk's cookie politik og få information om, hvordan vi bruger cookies på vores hjemmeside." />
+        <title>Cookie Politik | renoverbolig.dk</title>
+        <meta name="description" content="Læs renoverbolig.dk's cookie politik og få information om, hvordan vi bruger cookies på vores hjemmeside." />
       </Helmet>
 
       <div className="pt-28 md:pt-32 pb-16 md:pb-20">
@@ -31,7 +31,7 @@ const Cookies = () => {
               
               <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">2. Hvordan bruger vi cookies?</h2>
               <p>
-                På husrenovation.dk bruger vi cookies til forskellige formål, herunder:
+                På renoverbolig.dk bruger vi cookies til forskellige formål, herunder:
               </p>
               <ul className="list-disc pl-6 space-y-2 mt-4">
                 <li><strong>Nødvendige cookies:</strong> Disse cookies er essentielle for, at du kan navigere på hjemmesiden og bruge dens funktioner.</li>
@@ -43,7 +43,7 @@ const Cookies = () => {
               <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">3. Hvilke typer cookies bruger vi?</h2>
               <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">3.1 Førsteparts cookies</h3>
               <p>
-                Disse cookies sættes af husrenovation.dk og bruges til at forbedre din brugeroplevelse på vores hjemmeside.
+                Disse cookies sættes af renoverbolig.dk og bruges til at forbedre din brugeroplevelse på vores hjemmeside.
               </p>
               
               <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">3.2 Tredjeparts cookies</h3>

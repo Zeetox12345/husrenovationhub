@@ -5,7 +5,7 @@ import PartnerSection from "@/components/PartnerSection";
 import { Helmet } from "react-helmet";
 
 const Tagrenovering = () => {
-  const affiliateLink = "https://www.3byggetilbud.dk/tilbud/tagrenovering/";
+  const affiliateLink = "https://www.partner-ads.com/dk/c/p/53649/b/25692/https://www.3byggetilbud.dk/tilbud/tagrenovering/";
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -167,7 +167,7 @@ const Tagrenovering = () => {
           <div className="max-w-3xl mx-auto">
             <div className="bg-white rounded-xl p-8 border border-brand-blue shadow-md">
               <div className="flex flex-col md:flex-row items-center mb-6">
-                <a href={affiliateLink} target="_blank" rel="noopener noreferrer">
+                <a href="https://www.partner-ads.com/dk/klikbanner.php?partnerid=53649&bannerid=25692" target="_blank" rel="noopener noreferrer">
                   <img 
                     src="/lovable-uploads/a2dc3d3c-2ffd-4a00-967d-a9fb7dc4591e.png" 
                     alt="3byggetilbud.dk" 
@@ -181,13 +181,13 @@ const Tagrenovering = () => {
               
               <div className="space-y-4 text-gray-700">
                 <p>
-                  <a href={affiliateLink} target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-semibold">3byggetilbud.dk</a> formidler årligt mellem 70.000 og 100.000 bygge- og renoveringsprojekter og er dermed Danmarks klart største formidler af byggeopgaver.
+                  <a href="https://www.partner-ads.com/dk/klikbanner.php?partnerid=53649&bannerid=25692" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-semibold">3byggetilbud.dk</a> formidler årligt mellem 70.000 og 100.000 bygge- og renoveringsprojekter og er dermed Danmarks klart største formidler af byggeopgaver.
                 </p>
                 <p>
-                  Hos <a href={affiliateLink} target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-semibold">3byggetilbud.dk</a> kan private boligejere, erhvervsdrivende og boligforeninger indhente 3 tilbud på ethvert byggeprojekt eller renoveringsopgave. 
+                  Hos <a href="https://www.partner-ads.com/dk/klikbanner.php?partnerid=53649&bannerid=25692" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-semibold">3byggetilbud.dk</a> kan private boligejere, erhvervsdrivende og boligforeninger indhente 3 tilbud på ethvert byggeprojekt eller renoveringsopgave. 
                 </p>
                 <p>
-                  <a href={affiliateLink} target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-semibold">3byggetilbud.dk</a> har et landsdækkende netværk af flere tusinde håndværkerfirmaer og har været i branchen for formidling af byggeopgaver siden år 2000.
+                  <a href="https://www.partner-ads.com/dk/klikbanner.php?partnerid=53649&bannerid=25692" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-semibold">3byggetilbud.dk</a> har et landsdækkende netværk af flere tusinde håndværkerfirmaer og har været i branchen for formidling af byggeopgaver siden år 2000.
                 </p>
               </div>
               

@@ -13,7 +13,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Husrenovation.dk – Tips til boligrenovering 2025</title>
+        <title>Renoverbolig.dk – Tips til boligrenovering 2025</title>
         <meta name="description" content="Find kvalificerede håndværkere til din husrenovering i Danmark. Få ekspertvejledning, sammenlign kvalitet og priser, og opnå det bedste resultat for dit renoveringsprojekt." />
         <meta name="keywords" content="husrenovering, renovering, håndværkere, tagarbejde, boligrenovering, renovering af hus, danske håndværkere, tilbud på renovering" />
       </Helmet>
@@ -30,7 +30,7 @@ const Index = () => {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Hvorfor vælge husrenovation.dk?
+              Hvorfor vælge renoverbolig.dk?
             </h2>
             <p className="text-xl text-gray-700">
               Vi gør det nemt og sikkert at finde de bedste håndværkere til dit renoveringsprojekt
@@ -176,7 +176,7 @@ const Index = () => {
               </ul>
               
               <p>
-                Hos husrenovation.dk hjælper vi dig med at finde pålidelige og professionelle håndværkere til netop dit renoveringsprojekt, så du kan få det bedste resultat til den rigtige pris.
+                Hos renoverbolig.dk hjælper vi dig med at finde pålidelige og professionelle håndværkere til netop dit renoveringsprojekt, så du kan få det bedste resultat til den rigtige pris.
               </p>
             </div>
           </div>

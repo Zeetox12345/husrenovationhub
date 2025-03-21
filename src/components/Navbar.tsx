@@ -46,7 +46,7 @@ const Navbar = () => {
           to="/" 
           className="text-xl font-semibold text-brand-blue transition-all hover:opacity-90"
         >
-          husrenovation.dk
+          renoverbolig.dk
         </Link>
 
         <nav className="hidden md:block">

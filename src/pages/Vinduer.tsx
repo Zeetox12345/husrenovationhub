@@ -5,7 +5,7 @@ import PartnerSection from "@/components/PartnerSection";
 import { Helmet } from "react-helmet";
 
 const Vinduer = () => {
-  const affiliateLink = "https://www.3byggetilbud.dk/tilbud/vinduer/";
+  const affiliateLink = "https://www.partner-ads.com/dk/c/p/53649/b/25692/https://www.3byggetilbud.dk/tilbud/vinduer/";
   
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -18,7 +18,7 @@ const PartnerSection = ({ city, affiliateLink }: PartnerSectionProps) => {
           <p className="text-gray-600 mb-6">
             Vi anbefaler vores samarbejdspartner{" "}
             <a 
-              href="https://3byggetilbud.dk" 
+              href="https://www.partner-ads.com/dk/klikbanner.php?partnerid=53649&bannerid=25692" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-blue-600 hover:text-blue-800 font-medium"

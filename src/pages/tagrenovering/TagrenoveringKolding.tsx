@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 import { Container } from "@/components/ui/container";
 
 const TagrenoveringKolding = () => {
-  const affiliateLink = "https://www.3byggetilbud.dk/tilbud/tagrenovering/";
+  const affiliateLink = "https://www.partner-ads.com/dk/c/p/53649/b/25692/https://www.3byggetilbud.dk/tilbud/tagrenovering/";
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -18,7 +18,7 @@ const TagrenoveringKolding = () => {
         <title>Tagrenovering i Kolding – Tips til nyt hustag 2025</title>
         <meta name="description" content="Kvalitetsbevidst tagrenovering i Kolding af certificerede tagspecialister. Få skræddersyet vejledning om taglægning, materialer og langsigtede løsninger." />
         <meta name="keywords" content="tagrenovering kolding, tag kolding, tagarbejde kolding, tagudskiftning kolding, tagreparation kolding" />
-        <link rel="canonical" href="https://husrenovation.dk/tagrenovering-kolding" />
+        <link rel="canonical" href="https://renoverbolig.dk/tagrenovering-kolding" />
       </Helmet>
 
       <div className="pt-24 md:pt-32 pb-16 md:pb-20">

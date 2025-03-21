@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 import { Container } from "@/components/ui/container";
 
 const TagrenoveringRanders = () => {
-  const affiliateLink = "https://www.3byggetilbud.dk/tilbud/tagrenovering/";
+  const affiliateLink = "https://www.partner-ads.com/dk/c/p/53649/b/25692/https://www.3byggetilbud.dk/tilbud/tagrenovering/";
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -18,7 +18,7 @@ const TagrenoveringRanders = () => {
         <title>Tagrenovering i Randers – Tips til tagskifte 2025</title>
         <meta name="description" content="Professionel tagrenovering i Randers med fokus på kvalitet og holdbarhed. Få ekspertråd om tagtyper, materialevalg og energieffektive tagløsninger." />
         <meta name="keywords" content="tagrenovering randers, tag randers, tagarbejde randers, tagudskiftning randers, tagreparation randers" />
-        <link rel="canonical" href="https://husrenovation.dk/tagrenovering-randers" />
+        <link rel="canonical" href="https://renoverbolig.dk/tagrenovering-randers" />
       </Helmet>
 
       <div className="pt-24 md:pt-32 pb-16 md:pb-20">
