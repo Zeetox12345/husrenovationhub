@@ -19,6 +19,7 @@ import Privatlivspolitik from "./pages/Privatlivspolitik";
 import Cookies from "./pages/Cookies";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import GoogleTag from "./components/GoogleTag";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <GoogleTag />
       <BrowserRouter>
         <div className="flex min-h-screen flex-col">
           <Navbar />
