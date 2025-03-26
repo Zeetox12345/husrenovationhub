@@ -201,6 +201,7 @@ const Index = () => {
             <CTAButton 
               href="/tagrenovering" 
               className="bg-white text-brand-blue hover:bg-gray-100"
+              trackConversion={true}
             >
               Få tilbud på tagrenovering
             </CTAButton>

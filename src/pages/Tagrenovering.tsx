@@ -219,6 +219,7 @@ const Tagrenovering = () => {
             href={affiliateLink} 
             size="lg"
             className="bg-white text-brand-blue hover:bg-gray-100 animate-pulse-soft shadow-lg"
+            trackConversion={true}
           >
             Bestil 3 uforpligtende tilbud
           </CTAButton>

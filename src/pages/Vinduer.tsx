@@ -197,7 +197,7 @@ const Vinduer = () => {
               <p className="text-xl text-gray-700 mb-8">
                 Få uforpligtende tilbud fra op til 3 professionelle vinduesfirmaer i dit område
               </p>
-              <CTAButton href={affiliateLink} size="lg">
+              <CTAButton href={affiliateLink} size="lg" trackConversion={true}>
                 Få gratis tilbud nu
               </CTAButton>
             </div>

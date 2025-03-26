@@ -46,7 +46,7 @@ const TagrenoveringKobenhavn = () => {
             </p>
             
             <div className="mb-12 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-              <CTAButton href={affiliateLink} size="lg" className="w-full md:w-auto animate-pulse-soft">
+              <CTAButton href={affiliateLink} size="lg" className="w-full md:w-auto animate-pulse-soft" trackConversion={true}>
                 Bestil 3 uforpligtende tilbud i København
               </CTAButton>
             </div>
@@ -154,7 +154,7 @@ const TagrenoveringKobenhavn = () => {
               <p className="text-gray-700 mb-6">
                 Vores erfarne håndværkere i København kan hjælpe dig med at vurdere tagets tilstand og anbefale den rette løsning for dit hjem.
               </p>
-              <CTAButton href={affiliateLink} variant="primary">
+              <CTAButton href={affiliateLink} variant="primary" trackConversion={true}>
                 Bestil 3 uforpligtende tilbud i København
               </CTAButton>
             </div>
@@ -203,6 +203,7 @@ const TagrenoveringKobenhavn = () => {
             href={affiliateLink} 
             size="lg"
             className="bg-white text-brand-blue hover:bg-gray-100 animate-pulse-soft shadow-lg"
+            trackConversion={true}
           >
             Bestil 3 uforpligtende tilbud i København
           </CTAButton>
