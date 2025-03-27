@@ -2,10 +2,14 @@ import { useEffect } from "react";
 import CTAButton from "@/components/CTAButton";
 import { Helmet } from "react-helmet";
 
-const TagrenoveringAalborg = () => {
+// This is a template file for city-specific tagrenovering pages
+// Replace [CITY] and [CITY_LOWERCASE] with the actual city name throughout the code
+// Customize specific sections as needed for each city
+
+const TagrenoveringCITY = () => {
   const affiliateLink = "https://www.partner-ads.com/dk/c/p/53649/b/25692/https://www.3byggetilbud.dk/tilbud/tagrenovering/";
-  const city = "Aalborg";
-  const cityLowercase = "aalborg";
+  const city = "[CITY]"; // Replace with actual city name
+  const cityLowercase = "[CITY_LOWERCASE]"; // Replace with lowercase city name
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -14,7 +18,7 @@ const TagrenoveringAalborg = () => {
   return (
     <>
       <Helmet>
-        <title>Nyt tag Aalborg 2025 - Den komplette guide til tagrenovering</title>
+        <title>Nyt tag {city} 2025 - Den komplette guide til tagrenovering</title>
         <meta name="description" content={`Få indsigt i priser og muligheder for tagrenovering i ${city}. Komplet guide til tagtyper, vedligeholdelse og valg af professionelle tageksperter i ${city}.`} />
         <meta name="keywords" content={`tagrenovering ${cityLowercase}, nyt tag ${cityLowercase}, tagarbejde ${cityLowercase}, tagudskiftning ${cityLowercase}, tagreparation ${cityLowercase}, tageksperter ${cityLowercase}`} />
         <link rel="canonical" href={`https://husrenovationhub.dk/tagrenovering-${cityLowercase}`} />
@@ -95,10 +99,10 @@ const TagrenoveringAalborg = () => {
               En tagrenovering er ofte et af de mest omfattende projekter, du kan kaste dig ud i som boligejer i {city}.
             </p>
             <p>
-              Ikke alene kan prisen let overstige 100.000 kroner for en gennemsnitlig familiebolig, men processen indebærer også en række valg om både materialer, isoleringsmuligheder og æstetik, der skal tage højde for det nordjyske klima med kraftig vind fra Limfjorden.
+              Ikke alene kan prisen let overstige 100.000 kroner i {city}-området, men processen indebærer også en række valg om både materialer, isoleringsmuligheder og æstetik, der passer til områdets byggestil.
             </p>
             <p>
-              Alligevel kan tagrenoveringen hurtigt vise sig at være en fornuftig investering for {city}-boligejere, da den både reducerer varmeregningen og øger boligens samlede værdi på det dynamiske nordjyske boligmarked.
+              Alligevel kan tagrenoveringen hurtigt vise sig at være en fornuftig investering for {city}-boligejere, da den både reducerer varmeregningen og øger boligens samlede værdi på det lokale boligmarked.
             </p>
           </div>
           
@@ -165,11 +169,11 @@ const TagrenoveringAalborg = () => {
               
               <div className="space-y-6 text-gray-700">
                 <p>
-                  I {city} ligger prisen for et nyt tag typisk mellem 700 og 2.300 kr. pr. m², afhængigt af tagtype og kompleksitet. De nordjyske priser ligger ofte lidt lavere end i hovedstadsområdet, men tager samtidig højde for de særlige krav, der stilles til tagkonstruktioner i det vindprægede klima.
+                  I {city} ligger prisen for et nyt tag typisk mellem 700 og 2.300 kr. pr. m², afhængigt af tagtype og kompleksitet. Lokale forhold i {city} kan påvirke prisen, da transportomkostninger, lokale byggetilladelser og arbejdslønnen kan variere.
                 </p>
                 
                 <p>
-                  På grund af {city}s varierede boligtyper, fra bevaringsværdige ejendomme i centrum til moderne villaer i Hasseris og Aalborg Øst, er der stor variation i de løsninger, der passer bedst til den enkelte bolig.
+                  På grund af {city}s specifikke vejrforhold og lokale byggeskik vælger mange boligejere her at investere i holdbare tagløsninger, der er tilpasset de lokale forhold.
                 </p>
                 
                 {/* Pricing table adjusted for city */}
@@ -199,9 +203,9 @@ const TagrenoveringAalborg = () => {
                         <td className="py-3 px-4">20-40 år</td>
                       </tr>
                       <tr className="border-b border-gray-200 hover:bg-gray-50">
-                        <td className="py-3 px-4 font-medium">Skifertag</td>
-                        <td className="py-3 px-4">1.800-2.500 kr.</td>
-                        <td className="py-3 px-4">80-100 år</td>
+                        <td className="py-3 px-4 font-medium">Eternittag</td>
+                        <td className="py-3 px-4">800-1.200 kr.</td>
+                        <td className="py-3 px-4">20-40 år</td>
                       </tr>
                       <tr className="border-b border-gray-200 hover:bg-gray-50">
                         <td className="py-3 px-4 font-medium">Ståltag</td>
@@ -229,28 +233,28 @@ const TagrenoveringAalborg = () => {
               <div className="bg-white rounded-xl p-6 card-hover shadow-sm">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Tegltag</h3>
                 <p className="text-gray-700">
-                  Tegltage har været brugt i århundreder i {city} og pryder mange af byens historiske bygninger i centrum og Nørresundby. De er holdbare, æstetisk tiltalende og har en exceptionel modstandsdygtighed over for det nordlige klima og de kraftige vinde fra Limfjorden.
-                </p>
-              </div>
-              
-              <div className="bg-white rounded-xl p-6 card-hover shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Skifertag</h3>
-                <p className="text-gray-700">
-                  Skifer er særligt populært i {city}s ældre, velhaverkvarterer som Hasseris og dele af midtbyen. Det er ekstremt holdbart, tåler det barske nordjyske vejr godt og giver et elegant, tidløst udseende til patriciervillaer og andre markante bygninger.
+                  Tegltage er meget udbredte i {city}, især på ældre ejendomme. De er holdbare, æstetisk tiltalende og passer godt til områdets arkitektur. Med en levetid på 60-100 år er de en solid investering.
                 </p>
               </div>
               
               <div className="bg-white rounded-xl p-6 card-hover shadow-sm">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Eternittag</h3>
                 <p className="text-gray-700">
-                  Eternittag er udbredt i {city}, særligt i parcelhusområder som Gug, Skalborg og Aalborg Øst. Moderne versioner er miljøvenlige, har en god modstandsdygtighed mod vind og regn, og kræver minimal vedligeholdelse.
+                  Mange boliger i {city} har eternittag, som er lette og vedligeholdelsesvenlige. Moderne eternitplader er fri for asbest og passer godt til områdets nyere byggerier.
                 </p>
               </div>
               
               <div className="bg-white rounded-xl p-6 card-hover shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Stålpladetag</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Tagpap</h3>
                 <p className="text-gray-700">
-                  Stålpladetag vinder frem i {city}, især til industribyggeri på havnefronten og i moderne boliger i nyere områder. De er lette, holdbare og har god modstandsdygtighed over for både salt fra fjorden og de stærke vinde, der ofte rammer området.
+                  I {city} bruges tagpap ofte på flade tage og tilbygninger. Det er en økonomisk løsning, der fungerer godt i byens klimaforhold, og som let kan vedligeholdes og repareres ved behov.
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-xl p-6 card-hover shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Betontagsten</h3>
+                <p className="text-gray-700">
+                  Betontagsten ses ofte i {city}s nyere boligkvarterer. De tilbyder god holdbarhed og et bredt udvalg af farver og former, der passer godt til moderne arkitektur i området.
                 </p>
               </div>
             </div>
@@ -260,7 +264,7 @@ const TagrenoveringAalborg = () => {
                 Usikker på hvilken tagløsning der passer til din bolig i {city}?
               </h3>
               <p className="text-gray-700 mb-6">
-                Vores erfarne tageksperter i {city} kan hjælpe dig med at vurdere tagets tilstand og anbefale den rette løsning for dit hjem, uanset om du bor i Vestbyen, Hasseris eller Nørresundby.
+                Vores erfarne tageksperter i {city} kan hjælpe dig med at vurdere tagets tilstand og anbefale den rette løsning for dit hjem.
               </p>
               <CTAButton href={affiliateLink} variant="primary" trackConversion={true}>
                 Få 3 gratis tilbud fra lokale tageksperter
@@ -284,14 +288,13 @@ const TagrenoveringAalborg = () => {
                   Tagrenovering i {city} har nogle særlige forhold, du bør være opmærksom på:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Byggetilladelser og godkendelser fra {city} Kommune kan være nødvendige, især i bevaringsværdige områder som centrum og dele af Hasseris</li>
-                  <li>Fjordnære områder som havnefronten, Vestbyen og Nørresundby er særligt udsatte for saltholdige vinde, hvilket stiller krav til materialevalg</li>
-                  <li>Det nordjyske klima med kraftige vinde kræver særlig opmærksomhed på tagkonstruktionens fastgørelse og styrke</li>
-                  <li>{city}s varierede boligmasse, fra historiske bygninger til moderne arkitektur, betyder, at tagløsninger skal tilpasses den enkelte bygnings stil</li>
-                  <li>Den industrielle baggrund i byen har efterladt mange bygninger med særlige tagkonstruktioner, der kræver specialviden ved renovering</li>
+                  <li>Lokale bygningsreglementer kan stille særlige krav til materialevalg og udførelse i {city}</li>
+                  <li>Byggetilladelser og godkendelser fra kommunen kan være nødvendige, især for fredede bygninger eller ejendomme i bevaringsværdige områder</li>
+                  <li>Vejrforhold i {city}-området kan påvirke valg af tagmaterialer og udførelsestidspunkt</li>
+                  <li>Lokale bestemmelser om energieffektivitet og isolering kan indebære særlige krav til din tagrenovering</li>
                 </ul>
                 <p>
-                  Vores netværk af erfarne taghåndværkere i {city} kender de lokale forhold og kan hjælpe dig med at navigere gennem disse udfordringer med både kommunen og arkitektoniske hensyn.
+                  Vores netværk af erfarne taghåndværkere i {city} kender de lokale forhold og kan hjælpe dig med at navigere gennem disse udfordringer.
                 </p>
               </div>
             </div>
@@ -309,13 +312,13 @@ const TagrenoveringAalborg = () => {
             
             <div className="space-y-6 text-gray-700">
               <p>
-                At finde kvalificerede håndværkere i {city} kan være en udfordring, især i perioder med høj byggeaktivitet i byen og de omliggende områder. Her er nogle fordele ved at bruge vores service:
+                At finde kvalificerede håndværkere i {city} kan være en udfordring, især i perioder med høj byggeaktivitet. Her er nogle fordele ved at bruge vores service:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Vi samarbejder kun med erfarne, certificerede og anmeldelsesverificerede håndværkere i {city} og omegn</li>
+                <li>Vi samarbejder kun med erfarne, certificerede og anmeldelsesverificerede håndværkere i {city}</li>
                 <li>Alle tilbud er skræddersyet til dit specifikke projekt og dine behov</li>
                 <li>Du sparer tid ved ikke selv at skulle kontakte og indhente tilbud fra forskellige firmaer</li>
-                <li>Vores håndværkere har specifik erfaring med nordjyske bygninger og lokale byggereglementer</li>
+                <li>Vores håndværkere har specifik erfaring med bygninger i {city} og lokale byggereglementer</li>
                 <li>Gennemsigtighed i priserne gør det nemt for dig at sammenligne og vælge det bedste tilbud</li>
               </ul>
             </div>
@@ -336,10 +339,10 @@ const TagrenoveringAalborg = () => {
               
               <div className="space-y-4 text-gray-700">
                 <p>
-                  <a href={affiliateLink} target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-semibold">3byggetilbud.dk</a> formidler årligt mellem 70.000 og 100.000 bygge- og renoveringsprojekter og er dermed Danmarks klart største formidler af byggeopgaver - også i {city} og hele Nordjylland.
+                  <a href={affiliateLink} target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-semibold">3byggetilbud.dk</a> formidler årligt mellem 70.000 og 100.000 bygge- og renoveringsprojekter og er dermed Danmarks klart største formidler af byggeopgaver - også i {city}.
                 </p>
                 <p>
-                  Hos <a href={affiliateLink} target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-semibold">3byggetilbud.dk</a> kan private boligejere, erhvervsdrivende og boligforeninger i {city} indhente 3 tilbud på enhver tagrenovering - fra små projekter i Aalborg Øst til omfattende renoveringer i Hasseris. 
+                  Hos <a href={affiliateLink} target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-semibold">3byggetilbud.dk</a> kan private boligejere, erhvervsdrivende og boligforeninger i {city} indhente 3 tilbud på enhver tagrenovering. 
                 </p>
               </div>
               
@@ -381,4 +384,4 @@ const TagrenoveringAalborg = () => {
   );
 };
 
-export default TagrenoveringAalborg; 
+export default TagrenoveringCITY; 
