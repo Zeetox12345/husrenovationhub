@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronUp, Home } from "lucide-react";
 import { Container } from "./ui/container";
 
 const Navbar = () => {
@@ -37,16 +37,21 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-white/90 backdrop-blur-md shadow-sm py-3"
-          : "bg-transparent py-5"
+          ? "bg-white/98 backdrop-blur-sm py-3"
+          : "bg-gradient-to-r from-white via-white/98 to-brand-lightBlue/20 backdrop-blur-sm py-5"
       )}
     >
       <Container className="flex items-center justify-between">
         <Link 
           to="/" 
-          className="text-xl font-semibold text-brand-blue transition-all hover:opacity-90"
+          className="flex items-center space-x-2 transition-all hover:opacity-90 group"
         >
-          renoverbolig.dk
+          <div className="bg-brand-blue/90 text-white p-2 rounded-md shadow-sm group-hover:shadow-md transition-all">
+            <Home className="h-5 w-5" />
+          </div>
+          <span className="text-xl font-bold bg-gradient-to-r from-brand-blue to-blue-600 bg-clip-text text-transparent tracking-tight font-sans">
+            Renoverbolig.dk
+          </span>
         </Link>
 
         <nav className="hidden md:block">
@@ -54,15 +59,16 @@ const Navbar = () => {
             <li>
               <Link 
                 to="/" 
-                className="text-base font-medium text-gray-700 transition-all hover:text-brand-blue"
+                className="text-base font-medium text-gray-700 transition-all hover:text-brand-blue hover:underline hover:underline-offset-4"
               >
                 Hjem
               </Link>
             </li>
-            <li className="relative">
+            <li className="relative group">
               <button 
-                className="flex items-center text-base font-medium text-gray-700 transition-all hover:text-brand-blue"
+                className="flex items-center text-base font-medium text-gray-700 transition-all hover:text-brand-blue group-hover:text-brand-blue hover:underline hover:underline-offset-4"
                 onClick={toggleTagDropdown}
+                onMouseEnter={() => setIsTagDropdownOpen(true)}
               >
                 Tagrenovering
                 {isTagDropdownOpen ? (
@@ -72,71 +78,78 @@ const Navbar = () => {
                 )}
               </button>
               
-              {isTagDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-md py-2 z-50">
-                  <Link 
-                    to="/tagrenovering" 
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    onClick={() => setIsTagDropdownOpen(false)}
-                  >
-                    Tagrenovering
-                  </Link>
-                  <Link 
-                    to="/tagrenovering-kobenhavn" 
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    onClick={() => setIsTagDropdownOpen(false)}
-                  >
-                    Tagrenovering København
-                  </Link>
-                  <Link 
-                    to="/tagrenovering-aarhus" 
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    onClick={() => setIsTagDropdownOpen(false)}
-                  >
-                    Tagrenovering Aarhus
-                  </Link>
-                  <Link 
-                    to="/tagrenovering-odense" 
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    onClick={() => setIsTagDropdownOpen(false)}
-                  >
-                    Tagrenovering Odense
-                  </Link>
-                  <Link 
-                    to="/tagrenovering-aalborg" 
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    onClick={() => setIsTagDropdownOpen(false)}
-                  >
-                    Tagrenovering Aalborg
-                  </Link>
-                  <Link 
-                    to="/tagrenovering-esbjerg" 
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    onClick={() => setIsTagDropdownOpen(false)}
-                  >
-                    Tagrenovering Esbjerg
-                  </Link>
-                  <Link 
-                    to="/tagrenovering-randers" 
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    onClick={() => setIsTagDropdownOpen(false)}
-                  >
-                    Tagrenovering Randers
-                  </Link>
-                  <Link 
-                    to="/tagrenovering-kolding" 
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    onClick={() => setIsTagDropdownOpen(false)}
-                  >
-                    Tagrenovering Kolding
-                  </Link>
+              <div 
+                className={`absolute top-full left-0 mt-2 w-64 bg-white/95 backdrop-blur-md shadow-lg rounded-md py-2 z-50 transform origin-top transition-all duration-200 ${
+                  isTagDropdownOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'
+                }`}
+                onMouseLeave={() => setIsTagDropdownOpen(false)}
+              >
+                <div className="py-1 px-2">
+                  <p className="text-xs font-medium text-brand-blue uppercase tracking-wide mb-1 px-2">Tagrenovering</p>
+                  <div className="h-0.5 bg-gradient-to-r from-brand-blue to-transparent mb-2"></div>
                 </div>
-              )}
+                <Link 
+                  to="/tagrenovering" 
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-lightBlue/40 hover:text-brand-blue transition-colors"
+                  onClick={() => setIsTagDropdownOpen(false)}
+                >
+                  Tagrenovering
+                </Link>
+                <Link 
+                  to="/tagrenovering-kobenhavn" 
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-lightBlue/40 hover:text-brand-blue transition-colors"
+                  onClick={() => setIsTagDropdownOpen(false)}
+                >
+                  Tagrenovering København
+                </Link>
+                <Link 
+                  to="/tagrenovering-aarhus" 
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-lightBlue/40 hover:text-brand-blue transition-colors"
+                  onClick={() => setIsTagDropdownOpen(false)}
+                >
+                  Tagrenovering Aarhus
+                </Link>
+                <Link 
+                  to="/tagrenovering-odense" 
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-lightBlue/40 hover:text-brand-blue transition-colors"
+                  onClick={() => setIsTagDropdownOpen(false)}
+                >
+                  Tagrenovering Odense
+                </Link>
+                <Link 
+                  to="/tagrenovering-aalborg" 
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-lightBlue/40 hover:text-brand-blue transition-colors"
+                  onClick={() => setIsTagDropdownOpen(false)}
+                >
+                  Tagrenovering Aalborg
+                </Link>
+                <Link 
+                  to="/tagrenovering-esbjerg" 
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-lightBlue/40 hover:text-brand-blue transition-colors"
+                  onClick={() => setIsTagDropdownOpen(false)}
+                >
+                  Tagrenovering Esbjerg
+                </Link>
+                <Link 
+                  to="/tagrenovering-randers" 
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-lightBlue/40 hover:text-brand-blue transition-colors"
+                  onClick={() => setIsTagDropdownOpen(false)}
+                >
+                  Tagrenovering Randers
+                </Link>
+                <Link 
+                  to="/tagrenovering-kolding" 
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-lightBlue/40 hover:text-brand-blue transition-colors"
+                  onClick={() => setIsTagDropdownOpen(false)}
+                >
+                  Tagrenovering Kolding
+                </Link>
+              </div>
             </li>
             <li>
               <Link 
                 to="/facaderenovering" 
-                className="text-base font-medium text-gray-700 transition-all hover:text-brand-blue"
+                className="text-base font-medium text-gray-700 transition-all hover:text-brand-blue hover:underline hover:underline-offset-4"
               >
                 Facaderenovering
               </Link>
@@ -144,7 +157,7 @@ const Navbar = () => {
             <li>
               <Link 
                 to="/vinduer" 
-                className="text-base font-medium text-gray-700 transition-all hover:text-brand-blue"
+                className="text-base font-medium text-gray-700 transition-all hover:text-brand-blue hover:underline hover:underline-offset-4"
               >
                 Vinduer
               </Link>
@@ -167,31 +180,44 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-white pt-24 pb-6 px-6 md:hidden">
+        <div className="fixed inset-0 z-40 bg-white/95 backdrop-blur-md pt-24 pb-6 px-6 md:hidden">
+          <div className="absolute right-6 top-6">
+            <button 
+              onClick={toggleMobileMenu}
+              aria-label="Close menu"
+            >
+              <X className="h-6 w-6 text-gray-700" />
+            </button>
+          </div>
+
           <nav>
             <ul className="flex flex-col space-y-6">
               <li>
                 <Link 
                   to="/" 
-                  className="text-xl font-medium text-gray-800"
+                  className="text-xl font-medium text-gray-800 hover:text-brand-blue transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Hjem
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="/tagrenovering" 
-                  className="text-xl font-medium text-gray-800"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Tagrenovering
-                </Link>
+                <div className="flex items-center justify-between">
+                  <Link 
+                    to="/tagrenovering" 
+                    className="text-xl font-medium text-gray-800 hover:text-brand-blue transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Tagrenovering
+                  </Link>
+                </div>
+                <div className="h-0.5 bg-gradient-to-r from-brand-blue to-transparent my-2"></div>
               </li>
-              <li className="pl-4 pt-2">
+              
+              <li className="pl-4 pt-0">
                 <Link 
                   to="/tagrenovering-kobenhavn" 
-                  className="text-lg font-medium text-gray-700"
+                  className="text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Tagrenovering København
@@ -200,7 +226,7 @@ const Navbar = () => {
               <li className="pl-4">
                 <Link 
                   to="/tagrenovering-aarhus" 
-                  className="text-lg font-medium text-gray-700"
+                  className="text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Tagrenovering Aarhus
@@ -209,7 +235,7 @@ const Navbar = () => {
               <li className="pl-4">
                 <Link 
                   to="/tagrenovering-odense" 
-                  className="text-lg font-medium text-gray-700"
+                  className="text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Tagrenovering Odense
@@ -218,7 +244,7 @@ const Navbar = () => {
               <li className="pl-4">
                 <Link 
                   to="/tagrenovering-aalborg" 
-                  className="text-lg font-medium text-gray-700"
+                  className="text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Tagrenovering Aalborg
@@ -227,7 +253,7 @@ const Navbar = () => {
               <li className="pl-4">
                 <Link 
                   to="/tagrenovering-esbjerg" 
-                  className="text-lg font-medium text-gray-700"
+                  className="text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Tagrenovering Esbjerg
@@ -236,25 +262,26 @@ const Navbar = () => {
               <li className="pl-4">
                 <Link 
                   to="/tagrenovering-randers" 
-                  className="text-lg font-medium text-gray-700"
+                  className="text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Tagrenovering Randers
                 </Link>
               </li>
-              <li className="pl-4">
+              <li className="pl-4 mb-6">
                 <Link 
                   to="/tagrenovering-kolding" 
-                  className="text-lg font-medium text-gray-700"
+                  className="text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Tagrenovering Kolding
                 </Link>
               </li>
+              
               <li>
                 <Link 
                   to="/facaderenovering" 
-                  className="text-xl font-medium text-gray-800"
+                  className="text-xl font-medium text-gray-800 hover:text-brand-blue transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Facaderenovering
@@ -263,7 +290,7 @@ const Navbar = () => {
               <li>
                 <Link 
                   to="/vinduer" 
-                  className="text-xl font-medium text-gray-800"
+                  className="text-xl font-medium text-gray-800 hover:text-brand-blue transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Vinduer
