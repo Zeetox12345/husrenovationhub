@@ -4,10 +4,10 @@ import TrustSignals from "@/components/TrustSignals";
 import PartnerSection from "@/components/PartnerSection";
 import { Helmet } from "react-helmet";
 
-const TagrenoveringKolding = () => {
+const TagrenoveringVejle = () => {
   const affiliateLink = "https://www.partner-ads.com/dk/c/p/53649/b/25692/https://www.3byggetilbud.dk/tilbud/tagrenovering/";
-  const city = "Kolding";
-  const cityLowercase = "kolding";
+  const city = "Vejle";
+  const cityLowercase = "vejle";
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -882,4 +882,4 @@ const TagrenoveringKolding = () => {
   );
 };
 
-export default TagrenoveringKolding; 
+export default TagrenoveringVejle; 

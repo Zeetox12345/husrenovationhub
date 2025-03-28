@@ -276,338 +276,48 @@ const TagrenoveringAalborg = () => {
         </div>
       </section>
 
-      <section id="prisafgoer" className="py-16 bg-white">
+      {/* City-specific section: Populære tagtyper */}
+      <section id="tagtyper" className="py-16 bg-gray-50">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              Hvad afgør prisen på tagrenovering i {city}?
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
+              Populære tagtyper i {city}
             </h2>
             
-            <div className="space-y-6 text-gray-700">
-              <p>
-                En række faktorer påvirker prisen på din tagrenovering i {city}. Her er nogle af de vigtigste:
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-brand-blue">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Tagets størrelse og kompleksitet</h3>
-                  <p>
-                    Et større tag kræver flere materialer og arbejdstimer. Kviste, skotrender og vanskelige vinkler øger kompleksiteten og dermed prisen.
-                  </p>
-                </div>
-                
-                <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-brand-blue">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Tagmaterialet</h3>
-                  <p>
-                    Tegl, beton, eternit, tagpap - hver tagtype har sin egen pris, og kvaliteten inden for hver type kan variere betydeligt.
-                  </p>
-                </div>
-                
-                <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-brand-blue">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Isolering og undertag</h3>
-                  <p>
-                    Forbedret isolering og nyt undertag er gode investeringer, men øger den umiddelbare udgift til renoveringen.
-                  </p>
-                </div>
-                
-                <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-brand-blue">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Adgangsforhold</h3>
-                  <p>
-                    Vanskeligere adgang til taget kan betyde højere pris, da det kræver mere tid og særligt udstyr for håndværkerne.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="mt-8 bg-brand-lightBlue p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Få et præcist prisoverslag til dit tag</h3>
-                <p className="mb-4">
-                  Fordi prisen på tagrenovering afhænger af så mange faktorer, er det klogt at få flere konkrete tilbud. Vores samarbejdspartner kan hjælpe dig med at indhente tre gratis tilbud fra erfarne tagfirmaer i {city}.
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-white rounded-xl p-6 card-hover shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Tegltag</h3>
+                <p className="text-gray-700">
+                  Tegltage er meget udbredte i {city}, især på ældre ejendomme. De er holdbare, æstetisk tiltalende og passer godt til områdets arkitektur. Med en levetid på 60-100 år er de en solid investering.
                 </p>
-                <CTAButton href={affiliateLink} className="w-full md:w-auto">
-                  Få 3 gratis tilbud på dit tagprojekt
-                </CTAButton>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="vaelg-tag" className="py-16 bg-gray-50">
-        <div className="container">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              Tagbelægningens bæreevne i {city}
-            </h2>
-            
-            <div className="space-y-6 text-gray-700">
-              <p>
-                Klimaet i {city} med sin blanding af maritimt og kontinentalt klima stiller særlige krav til dit tag. Med ofte kraftig vind fra Limfjorden og Nordsøen, samt kolde vintre og en del nedbør, er det vigtigt at vælge en tagbelægning, der kan modstå disse forhold.
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Vindmodstand</h3>
-                  <p>
-                    I {city}, især i bydele som Nørresundby og områder nær fjorden, er en god vindmodstand essentiel. Tegl og betontagsten har god vægt og er mindre følsomme over for vindpåvirkning.
-                  </p>
-                </div>
-                
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Fugtresistens</h3>
-                  <p>
-                    Med byen nær både fjord og hav er luftfugtigheden ofte høj. Vælg materialer, der ikke påvirkes negativt af fugt, og sørg for god ventilation i tagkonstruktionen.
-                  </p>
-                </div>
               </div>
               
-              <p className="mt-6">
-                Konsulter altid med fagfolk, der kender de lokale forhold i {city}, før du træffer dit valg af tagmateriale. De kan rådgive om, hvilke løsninger der har vist sig holdbare i netop dit lokalområde.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="tjekstand" className="py-16 bg-white">
-        <div className="container">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              Sådan tjekker du tagets stand i {city}
-            </h2>
-            
-            <div className="space-y-6 text-gray-700">
-              <p>
-                At vurdere dit tags tilstand er afgørende for at afgøre, om du har behov for en komplet udskiftning eller blot en mindre reparation. Her er, hvad du bør holde øje med:
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Indvendige tegn</h3>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li>Fugtpletter i loftet eller på vægge</li>
-                    <li>Dagslys der trænger gennem taget på loftet</li>
-                    <li>Træk eller kulde fra loftet</li>
-                    <li>Skimmelsvamp eller muglugt</li>
-                  </ul>
-                </div>
-                
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Udvendige tegn</h3>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li>Løse, knækkede eller manglende tagsten/tagplader</li>
-                    <li>Rust på metaltagdele</li>
-                    <li>Slid på tagpap eller andre tagmaterialer</li>
-                    <li>Nedslidt eller beskadiget undertag</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="mt-8 bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Professionel inspektion</h3>
-                <p className="mb-4">
-                  I {city}, hvor vejret kan være barskt, er det særligt vigtigt med regelmæssige tagtjek. Professionelle tageksperter har både erfaring og specialudstyr til at opdage problemer, før de bliver alvorlige.
+              <div className="bg-white rounded-xl p-6 card-hover shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Eternittag</h3>
+                <p className="text-gray-700">
+                  Mange boliger i {city}s forstadsområder har eternittag, som er lette og vedligeholdelsesvenlige. Moderne eternitplader er fri for asbest og passer godt til områdets nyere byggerier.
                 </p>
-                <p>
-                  Mange håndværkere i {city}-området tilbyder gratis tageftersyn, så du får en ekspert vurdering uden omkostninger.
+              </div>
+              
+              <div className="bg-white rounded-xl p-6 card-hover shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Tagpap</h3>
+                <p className="text-gray-700">
+                  I {city} bruges tagpap ofte på flade tage og på nybyggerier. Det er en økonomisk løsning, der fungerer godt i byens klimaforhold, og som let kan vedligeholdes og repareres ved behov.
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-xl p-6 card-hover shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Betontagsten</h3>
+                <p className="text-gray-700">
+                  Betontagsten er populære i {city}s nyere boligområder. De er robuste, kan fås i mange forskellige farver og er mere økonomiske end tegl, selvom levetiden er lidt kortere.
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="utaetheder" className="py-16 bg-gray-50">
-        <div className="container">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              Typiske skader og utætheder på {city}-tage
-            </h2>
             
-            <div className="space-y-6 text-gray-700">
-              <p>
-                Tage i {city} er udsat for særlige udfordringer på grund af byens placering og vejrforhold. Her er nogle af de mest almindelige problemer, vi ser på tage i området:
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-red-500">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Vind- og stormskader</h3>
-                  <ul className="list-disc pl-6 space-y-1">
-                    <li>Særligt udsatte områder nær Limfjorden oplever ofte løse eller manglende tagsten efter stærk blæst.</li>
-                    <li>Disse skader kan hurtigt føre til vandindtrængning og bør udbedres hurtigt.</li>
-                  </ul>
-                </div>
-                
-                <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-red-500">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Utætte inddækninger</h3>
-                  <ul className="list-disc pl-6 space-y-1">
-                    <li>Inddækninger omkring skorstene, ovenlys og andre gennembrydninger i taget er særligt udsatte.</li>
-                    <li>I {city}s maritimt prægede klima nedbrydes tætningerne hurtigere end i mere beskyttede områder.</li>
-                  </ul>
-                </div>
-                
-                <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-red-500">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Nedbrudt undertag</h3>
-                  <ul className="list-disc pl-6 space-y-1">
-                    <li>Mange ældre huse i {city}, særligt i Vejgaard og Hasseris, har undertag af ældre materiale, som nedbrydes over tid.</li>
-                    <li>Et defekt undertag kan ikke længere lede vand væk og fører til fugtskader.</li>
-                  </ul>
-                </div>
-                
-                <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-red-500">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Mos- og algevækst</h3>
-                  <ul className="list-disc pl-6 space-y-1">
-                    <li>Nordjyllands fugtige klima giver gode vækstbetingelser for mos og alger, særligt på nordsiden af tage.</li>
-                    <li>Selvom det primært er et æstetisk problem, kan kraftig bevoksning holde på fugt og forkorte tagets levetid.</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="mt-8 p-6 bg-brand-lightBlue rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Forebyg større skader med regelmæssigt eftersyn</h3>
-                <p className="mb-4">
-                  De fleste større tagskader starter som små problemer, der kunne have været udbedret for en brøkdel af prisen. Et årligt tagtjek af en fagperson, særligt efter efterårsstorme i {city}, kan spare dig for store udgifter på sigt.
-                </p>
-                <CTAButton href={affiliateLink} className="w-full md:w-auto">
-                  Find tageksperter i {city}
-                </CTAButton>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="isolering" className="py-16 bg-white">
-        <div className="container">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              Isolering af taget i {city} - Spar på varmeregningen
-            </h2>
-            
-            <div className="space-y-6 text-gray-700">
-              <p>
-                En god tagisolering er særligt vigtig i {city}, hvor vintrene kan være kolde og fyringssæsonen lang. Ved at efterisolere dit tag eller loft kan du:
-              </p>
-              
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Spare op til 30% på din varmeregning</li>
-                <li>Forbedre komforten i din bolig markant</li>
-                <li>Reducere dit CO2-aftryk</li>
-                <li>Øge boligens værdi</li>
-              </ul>
-              
-              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Isoleringstyper til tage i {city}</h3>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Mineraluldsisolering</h4>
-                    <p className="text-sm">
-                      Den klassiske løsning, der stadig er populær i {city} grundet god pris-ydeevne-forhold. Kræver korrekt dampspærre for at undgå kondensproblemer.
-                    </p>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Papiruld</h4>
-                    <p className="text-sm">
-                      En miljøvenlig løsning, der bliver mere og mere populær i {city}. God til at regulere fugt, hvilket er en fordel i vores klima nær fjorden.
-                    </p>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">PIR/PUR-isolering</h4>
-                    <p className="text-sm">
-                      Højisolerende skumpaneler der giver meget isolering i en tynd konstruktion. Ideel når pladsen er begrænset i ældre {city}-huse.
-                    </p>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Træfiberisolering</h4>
-                    <p className="text-sm">
-                      Naturprodukt med gode fugtregulerende egenskaber. Vinder frem i {city}s bevaringsværdige bygninger og hos miljøbevidste boligejere.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-              <p>
-                Når du skal isolere dit tag i {city}, er det vigtigt at tænke på både isoleringsevne og fugttekniske forhold, da vores lokale klima stiller særlige krav. Konsulter altid med en fagperson, der kender til de lokale forhold.
-              </p>
-              
-              <div className="mt-8 bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Tilskudsmuligheder i {city}</h3>
-                <p className="mb-4">
-                  Der er ofte mulighed for at få tilskud til energirenoveringer, herunder tagisolering, gennem forskellige ordninger. {city} Kommune har periodisk særlige tilskudspuljer, og energiselskaberne tilbyder også energitilskud.
-                </p>
-                <p>
-                  En professionel tagentreprenør i {city} kan ofte hjælpe dig med at navigere i disse muligheder og sikre, at du får de tilskud, du er berettiget til.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="loveregler" className="py-16 bg-gray-50">
-        <div className="container">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              Love og regler ved tagrenovering i {city}: Hvad skal du være opmærksom på?
-            </h2>
-            
-            <div className="space-y-6 text-gray-700">
-              <p>
-                Når du renoverer dit tag i {city}, er der en række regler og bestemmelser, du skal være opmærksom på. Her er en oversigt over de vigtigste:
-              </p>
-              
-              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Bygningsreglement og energikrav</h3>
-                <p className="mb-4">
-                  Det gældende bygningsreglement stiller krav til energieffektiviteten. Ved større tagrenovationer i {city} skal taget efterisoleres til en U-værdi på højst 0,15 W/m²K, medmindre det ikke er rentabelt.
-                </p>
-                <p>
-                  I praksis betyder dette, at de fleste tagrenovationer i {city} vil kræve efterisolering, da det kolde klima gør det rentabelt.
-                </p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Lokalplaner</h3>
-                <p className="mb-4">
-                  {city} Kommune har en række lokalplaner, der kan indeholde bestemmelser om tagmaterialer, taghældning og tagfarve. Dette gælder særligt i områder som midtbyen, Hasseris og andre områder med bevaringsværdige bygninger.
-                </p>
-                <p className="mb-4">
-                  Du kan tjekke, om din ejendom er omfattet af en lokalplan på {city} Kommunes hjemmeside eller ved at kontakte kommunens byggesagsafdeling direkte.
-                </p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Byggetilladelse</h3>
-                <p className="mb-4">
-                  I mange tilfælde kan du udskifte dit tag uden byggetilladelse, hvis du ikke ændrer på tagets konstruktion eller udseende væsentligt. Men hvis du:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 mb-4">
-                  <li>Ændrer tagmaterialet (f.eks. fra tegl til eternit)</li>
-                  <li>Ændrer taghældningen</li>
-                  <li>Etablerer nye kviste eller ovenlysvinduer</li>
-                  <li>Foretager konstruktionsmæssige ændringer</li>
-                </ul>
-                <p>
-                  Så skal du søge om byggetilladelse hos {city} Kommune. Processen tager typisk 2-8 uger, alt efter projektets kompleksitet.
-                </p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Servitutter</h3>
-                <p className="mb-4">
-                  Ud over de kommunale regler kan der være private servitutter på din ejendom, der begrænser dine muligheder for tagrenovering. Dette er særligt udbredt i nyere villakvarterer i {city} som Gug og Skalborg, hvor grundejerforeninger kan have fastsat bestemte krav til tagtyper og -farver.
-                </p>
-                <p>
-                  Du kan finde servitutter i tingbogen eller ved at kontakte din grundejerforening.
-                </p>
-              </div>
-              
-              <p className="mt-6">
-                Det er altid en god idé at undersøge reglerne, før du påbegynder et tagrenoveringsprojekt i {city}. En professionel tagentreprenør med erfaring fra lokalområdet vil ofte kunne hjælpe dig med at navigere i reglerne og sikre, at dit projekt overholder alle krav.
-              </p>
+            <div className="mt-6 text-center">
+              <CTAButton href={affiliateLink} variant="primary">
+                Få 3 gratis og uforpligtende tilbud
+              </CTAButton>
             </div>
           </div>
         </div>
@@ -634,6 +344,537 @@ const TagrenoveringAalborg = () => {
             trackConversion={true}
           >
             Få 3 gratis tilbud på nyt tag
+          </CTAButton>
+        </div>
+      </section>
+
+      <div id="prisafgoer" className="mb-12">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              Hvad afgør prisen på en tagrenovering i {city}?
+            </h2>
+            
+            <div className="space-y-6 text-gray-700">
+              <p>
+                Prisen for at renovere eller udskifte taget i {city} kan variere betydeligt, og selv de bedste prisoverslag vil indeholde en vis usikkerhed. Her er nogle af de vigtigste faktorer, der typisk påvirker den samlede pris:
+              </p>
+              
+              <div className="space-y-4">
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">Tagets kompleksitet</h3>
+                  <ul className="list-disc pl-6 space-y-1 mt-2">
+                    <li>Jo flere detaljer som kviste, ovenlysvinduer og skorsten, desto mere arbejdstid kræves der.</li>
+                    <li>Inddækningerne (det tilpassede metal omkring disse elementer) kan øge omkostningerne betydeligt.</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">Taghældning</h3>
+                  <ul className="list-disc pl-6 space-y-1 mt-2">
+                    <li>En stejl taghældning indebærer ofte flere sikkerhedsforanstaltninger og mere tidskrævende arbejde.</li>
+                    <li>Højere kompleksitet fører som regel til højere udgifter.</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">Tagtilbehør</h3>
+                  <ul className="list-disc pl-6 space-y-1 mt-2">
+                    <li>Overvej at skifte ovenlysvinduer, stigetrin eller kviste samtidig med tagudskiftningen, da det ofte er økonomisk fordelagtigt at klare det hele på én gang.</li>
+                    <li>Disse tilvalg bør indgå i det samlede budget fra starten.</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">Timeløn og geografisk placering</h3>
+                  <ul className="list-disc pl-6 space-y-1 mt-2">
+                    <li>En stor del af prisen går til håndværkerens arbejdstimer.</li>
+                    <li>Timelønnen i {city}-området kan påvirke den endelige regning sammenlignet med andre områder i landet.</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">Nedrivning af det gamle tag</h3>
+                  <ul className="list-disc pl-6 space-y-1 mt-2">
+                    <li>Overvej, om du selv kan fjerne det gamle tag og dermed spare 10.000-15.000 kroner.</li>
+                    <li>Ved at klare denne del på egen hånd kan du nedbringe den samlede udgift til projektet.</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <p>
+                Uanset hvordan dit projekt i {city} ser ud, bør du være opmærksom på alle ovenstående faktorer, når du indhenter tilbud. Det giver dig et mere nøjagtigt billede af de samlede omkostninger og hjælper med at undgå ubehagelige overraskelser.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="vaelg-tag" className="mb-12">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              Vælg en tagbelægning, der matcher tagkonstruktionens bæreevne
+            </h2>
+            
+            <div className="space-y-6 text-gray-700">
+              <p>
+                Når du planlægger en tagudskiftning eller tagrenovering i {city}, er det afgørende at vælge en tagbelægning, som din tagkonstruktion kan bære. Du kan enten vælge samme type tagbelægning som den eksisterende eller benytte følgende generelle tommelfingerregel baseret på vægt.
+              </p>
+              
+              <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-brand-blue">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">1. Forstå forskellen på let og tungt tag</h3>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>Let tag: Vejer under 25 kg pr. m²</li>
+                  <li>Tungt tag: Vejer over 25 kg pr. m²</li>
+                </ul>
+              </div>
+              
+              <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-brand-blue">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">2. Hvis det eksisterende tag er tungt</h3>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>Du kan i princippet vælge alle typer tagbelægning, fordi tagkonstruktionen allerede er dimensioneret til at kunne bære en højere vægt.</li>
+                  <li>Ofte anbefales det dog at fortsætte med en tung tagbelægning, da disse typisk har en længere levetid og holder bedre i det lange løb.</li>
+                </ul>
+              </div>
+              
+              <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-brand-blue">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">3. Hvis det eksisterende tag er let</h3>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>Vælg en ny tagbelægning, der også er defineret som let (dvs. under 25 kg pr. m²), så du ikke overbelaster konstruktionen.</li>
+                  <li>Undersøg forskellige lette tagtyper (fx fibercement, tagpap eller lette ståltage) for at finde den bedste løsning til dit projekt i {city}.</li>
+                </ul>
+              </div>
+              
+              <p>
+                Ved at følge disse retningslinjer undgår du unødige skader på din tagkonstruktion og sikrer samtidig, at din nye tagbelægning holder i mange år frem. Det er altid en god idé at rådføre sig med en professionel tagekspert i {city}, hvis du er i tvivl om, hvorvidt dit tag kan klare en specifik belægningstype.
+              </p>
+              
+              {/* Second pricing table with roof weights */}
+              <div className="overflow-x-auto my-8">
+                <table className="min-w-full border-collapse bg-white shadow-md rounded-lg overflow-hidden">
+                  <thead className="bg-gray-700 text-white">
+                    <tr>
+                      <th className="py-3 px-4 text-left">Tagtype</th>
+                      <th className="py-3 px-4 text-left">Typisk levetid</th>
+                      <th className="py-3 px-4 text-left">Vægt per m2 (estimat)</th>
+                      <th className="py-3 px-4 text-left">Min. taghældning</th>
+                      <th className="py-3 px-4 text-left">Pris</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-gray-200 hover:bg-gray-50">
+                      <td className="py-3 px-4 font-medium">Naturskifer</td>
+                      <td className="py-3 px-4">80-100 år</td>
+                      <td className="py-3 px-4">50 kg (tungt tag)</td>
+                      <td className="py-3 px-4">25 grader</td>
+                      <td className="py-3 px-4">Dyr</td>
+                    </tr>
+                    <tr className="border-b border-gray-200 hover:bg-gray-50">
+                      <td className="py-3 px-4 font-medium">Zinktag</td>
+                      <td className="py-3 px-4">50-100 år</td>
+                      <td className="py-3 px-4">30 kg (tungt tag)</td>
+                      <td className="py-3 px-4">3 grader</td>
+                      <td className="py-3 px-4">Meget dyr</td>
+                    </tr>
+                    <tr className="border-b border-gray-200 hover:bg-gray-50">
+                      <td className="py-3 px-4 font-medium">Kobbertag</td>
+                      <td className="py-3 px-4">50-100 år</td>
+                      <td className="py-3 px-4">30 kg (tungt tag)</td>
+                      <td className="py-3 px-4">3 grader</td>
+                      <td className="py-3 px-4">Meget dyr</td>
+                    </tr>
+                    <tr className="border-b border-gray-200 hover:bg-gray-50">
+                      <td className="py-3 px-4 font-medium">Betontagsten</td>
+                      <td className="py-3 px-4">50-70 år</td>
+                      <td className="py-3 px-4">40 kg (tungt tag)</td>
+                      <td className="py-3 px-4">20 grader</td>
+                      <td className="py-3 px-4">Dyr</td>
+                    </tr>
+                    <tr className="border-b border-gray-200 hover:bg-gray-50">
+                      <td className="py-3 px-4 font-medium">Teglsten</td>
+                      <td className="py-3 px-4">50-70 år</td>
+                      <td className="py-3 px-4">40-44 kg (tungt tag)</td>
+                      <td className="py-3 px-4">20-25 grader</td>
+                      <td className="py-3 px-4">Dyr</td>
+                    </tr>
+                    <tr className="border-b border-gray-200 hover:bg-gray-50">
+                      <td className="py-3 px-4 font-medium">Stålplader inkl. Decra</td>
+                      <td className="py-3 px-4">40-50 år</td>
+                      <td className="py-3 px-4">5 kg (let tag)</td>
+                      <td className="py-3 px-4">5-12 grader</td>
+                      <td className="py-3 px-4">Billig</td>
+                    </tr>
+                    <tr className="border-b border-gray-200 hover:bg-gray-50">
+                      <td className="py-3 px-4 font-medium">Eternitplader</td>
+                      <td className="py-3 px-4">20-40 år</td>
+                      <td className="py-3 px-4">18 kg (let tag)</td>
+                      <td className="py-3 px-4">14 grader</td>
+                      <td className="py-3 px-4">Rimelig</td>
+                    </tr>
+                    <tr className="border-b border-gray-200 hover:bg-gray-50">
+                      <td className="py-3 px-4 font-medium">Eternitskifer</td>
+                      <td className="py-3 px-4">30-40 år</td>
+                      <td className="py-3 px-4">19 kg (let tag)</td>
+                      <td className="py-3 px-4">18 grader</td>
+                      <td className="py-3 px-4">Rimelig</td>
+                    </tr>
+                    <tr className="border-b border-gray-200 hover:bg-gray-50">
+                      <td className="py-3 px-4 font-medium">Tagpap</td>
+                      <td className="py-3 px-4">20-40 år</td>
+                      <td className="py-3 px-4">20 kg med underlag (let tag)</td>
+                      <td className="py-3 px-4">1,5 - 3 grader</td>
+                      <td className="py-3 px-4">Billig</td>
+                    </tr>
+                    <tr className="border-b border-gray-200 hover:bg-gray-50">
+                      <td className="py-3 px-4 font-medium">Plasttag</td>
+                      <td className="py-3 px-4">10-20 år</td>
+                      <td className="py-3 px-4">Let tag</td>
+                      <td className="py-3 px-4">2 grader</td>
+                      <td className="py-3 px-4">Billig</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tjekstand" className="mb-12">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              Hvor ofte skal man tjekke tagets stand i {city}?
+            </h2>
+            
+            <div className="space-y-6 text-gray-700">
+              <p>
+                Hyppigheden af et grundigt tagtjek afhænger i høj grad af tagets alder og de lokale vejrforhold i {city}. Er taget under 15 år gammelt, kan du ofte nøjes med at få det kontrolleret hvert 5.–10. år. Har du derimod et ældre tag, anbefales det at få foretaget et tageftersyn mindst én gang årligt – og helst to gange om året.
+              </p>
+              
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Vigtige tjekpunkter</h3>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Rensning af tagrender: Du kan selv nemt tømme og rense tagrender for at undgå tilstoppede afløb, hvilket er særligt vigtigt i {city} med de lokale nedbørsmængder.</li>
+                  <li>Visuel kontrol: Hold øje med løse tagsten, revner eller skader på overfladen.</li>
+                  <li>Professionel vurdering: Ønsker du en komplet gennemgang, er det klogt at kontakte et professionelt tagfirma i {city}.</li>
+                </ul>
+              </div>
+              
+              <div className="bg-brand-lightBlue p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Fordelene ved et gratis tagtjek</h3>
+                <p>
+                  Mange tagfirmaer i {city} tilbyder en gratis inspektion, hvor de kigger efter tegn på slid, fugt eller andre skader. På den måde får du en detaljeret vurdering af tagets tilstand og eventuelle anbefalinger til reparation eller vedligeholdelse. Et regelmæssigt tagtjek kan således spare dig for dyre reparationer på lang sigt og forlænge tagets levetid.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Placeholder for affiliate banner */}
+      <div className="my-10">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <a href="https://www.partner-ads.com/dk/klikbanner.php?partnerid=53649&bannerid=26611" target="_blank" rel="nofollow noopener">
+              <img 
+                src="https://www.partner-ads.com/dk/visbanner.php?partnerid=53649&bannerid=26611" 
+                style={{ border: 0 }} 
+                alt="Partner tilbud"
+                className="mx-auto"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div id="utaetheder" className="mb-12">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              Hvor opstår der skader og utætheder i taget?
+            </h2>
+            
+            <div className="space-y-6 text-gray-700">
+              <p>
+                Selvom ethvert tag er unikt, er der visse områder, hvor der oftere opstår skader og utætheder end andre. For husejere i {city} er det vigtigt at være opmærksom på disse svage punkter. Her er fem typiske kilder til vandindtrængning:
+              </p>
+              
+              {/* Add image above the grid */}
+              <div className="my-6 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/roof2.jpg" 
+                  alt={`Inspektion af tag for utætheder i ${city}`} 
+                  className="w-full h-auto object-cover"
+                />
+                <div className="bg-gray-50 p-3">
+                  <p className="text-sm text-gray-700 italic">Regelmæssig inspektion af taget kan forhindre dyre skader forårsaget af utætheder, særligt vigtigt i {city}s klima</p>
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-red-500">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Utætte inddækninger</h3>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Disse består ofte af bukket metal omkring f.eks. skorstene, antenner, kviste eller udluftningshætter.</li>
+                    <li>Da de er udsat for vind og vejr, kan selv små revner her føre til større fugtproblemer på sigt.</li>
+                  </ul>
+                </div>
+                
+                <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-red-500">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Området ved ovenlysvinduer</h3>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Ovenlysvinduer er en god kilde til naturligt lys, men kræver korrekt monterede inddækninger for at undgå vandgennemtrængning.</li>
+                  </ul>
+                </div>
+                
+                <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-red-500">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Skotrenden</h3>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Skotrenden er samlingen mellem to tagflader, hvor regnvand ofte samler sig.</li>
+                    <li>Dårligt vedligeholdte skotrender kan forårsage vandskader i loft og tagkonstruktion.</li>
+                  </ul>
+                </div>
+                
+                <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-red-500">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Tagets rygning</h3>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Rygningen er toppen af taget, hvor to tagflader mødes.</li>
+                    <li>Utætheder her kan skyldes løse tagsten eller beskadigede fuger, hvilket giver vand fri adgang.</li>
+                  </ul>
+                </div>
+                
+                <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-red-500 md:col-span-2">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Tagudløb og tagrender</h3>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Overgangen mellem taget og tagrenden er et særligt udsat område, hvor vandet løber af taget.</li>
+                    <li>Tilstoppede tagrender eller utætte samlinger kan hurtigt udvikle sig til fugtproblemer.</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <p>
+                Når en professionel taglægger i {city} tjekker for utætheder, vil vedkommende inspicere alle disse udsatte områder samt resten af tagfladen for revner eller huller. Et grundigt eftersyn kan forebygge alvorlige skader og fordyrede reparationer på længere sigt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="isolering" className="mb-12">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              Isolering af taget: Et lovkrav ved tagrenovering
+            </h2>
+            
+            <div className="space-y-6 text-gray-700">
+              <p>
+                Når du planlægger en tagrenovering i {city}, er det ikke kun selve tagets tilstand og udseende, der er vigtig. Ifølge Bygningsreglementet skal ombygninger og udskiftninger af tage udføres på en måde, der er energibesparende. I praksis betyder det, at isolering af taget typisk er et lovkrav, hvis det eksisterende tag og loftrum ikke allerede er isoleret, og det samtidig er teknisk muligt og rentabelt.
+              </p>
+              
+              {/* Add image for insulation section */}
+              <div className="my-6 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/roof1.jpg" 
+                  alt={`Tagisolering i ${city}`} 
+                  className="w-full h-auto object-cover"
+                />
+                <div className="bg-gray-50 p-3">
+                  <p className="text-sm text-gray-700 italic">Korrekt tagisolering reducerer varmeudgifter og sikrer et bedre indeklima året rundt - særligt vigtigt i {city}s klima</p>
+                </div>
+              </div>
+              
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Hvorfor er isolering af taget så afgørende i {city}?
+              </h3>
+              
+              <ul className="list-disc pl-6 space-y-3">
+                <li className="font-medium">Bedre indeklima: Ved at holde bedre på varmen reducerer du kuldebroer og fugtproblemer.</li>
+                <li className="font-medium">Lavere varmeregning: En optimeret isolering mindsker energiforbruget markant - særligt vigtigt med de energipriser, vi oplever i {city}.</li>
+                <li className="font-medium">Energibesparelser og lovkrav: Bygningsreglementet fastsætter krav om at opgradere isoleringen ved tagudskiftning, så længe det er økonomisk forsvarligt.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="loveregler" className="py-16 bg-white">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <div className="mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                Love og regler ved tagrenovering i {city}: Hvad skal du være opmærksom på?
+              </h2>
+              
+              <div className="space-y-6 text-gray-700">
+                <p>
+                  Når du skal renovere eller udskifte taget i {city}, er det vigtigt at kende til de gældende love og regler, så du undgår unødvendige fejl og ekstraomkostninger. Her er tre vigtige områder, du bør undersøge, inden du går i gang: Bygningsreglementet, lokalplaner og servitutter.
+                </p>
+                
+                <div className="bg-gray-50 p-6 rounded-lg mb-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Bygningsreglementet</h3>
+                  <p className="mb-3">
+                    Bygningsreglementet er den lovgivning, der stiller krav til alt byggeri i Danmark – også tagrenoveringer i {city}. Her er nogle af de vigtigste punkter:
+                  </p>
+                  
+                  <div className="space-y-4 ml-4">
+                    <div>
+                      <h4 className="text-lg font-semibold text-gray-800">Energikrav og isolering</h4>
+                      <ul className="list-disc pl-6 space-y-1 mt-1">
+                        <li>Ifølge Bygningsreglementet skal ombygninger og tagudskiftninger udføres energibesparende.</li>
+                        <li>Det betyder, at du som udgangspunkt er forpligtet til at isolere taget, hvis det er muligt og rentabelt, og hvis loftrummet ikke allerede er tilstrækkeligt isoleret.</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-lg font-semibold text-gray-800">Vind, vejr og brandsikkerhed</h4>
+                      <ul className="list-disc pl-6 space-y-1 mt-1">
+                        <li>Taget skal kunne modstå {city}s lokale klima og være sikret mod vindskader, regn og fugt.</li>
+                        <li>Brandsikkerhed er ligeledes et krav, hvilket kan påvirke valget af tagmateriale.</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-lg font-semibold text-gray-800">Valg af tagtype</h4>
+                      <ul className="list-disc pl-6 space-y-1 mt-1">
+                        <li>Bygningsreglementet kan indeholde bestemmelser for, hvilke typer tag der må anvendes på bestemte bygninger.</li>
+                        <li>Taget skal renoveres og monteres i overensstemmelse med alle relevante krav i reglementet.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-4 p-3 bg-brand-lightBlue rounded-lg">
+                    <p className="italic">
+                      Tip: Selvom du kan finde mange informationer i Bygningsreglementet, kan du med fordel også rådføre dig med et professionelt tagfirma i {city} eller en uvildig byggetekniker for at sikre, at du overholder alle bestemmelser.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="bg-gray-50 p-6 rounded-lg mb-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">2. Lokalplan i {city}</h3>
+                  <p className="mb-3">
+                    En lokalplan kan sætte yderligere rammer for, hvordan et tag i {city} må se ud. Det kan f.eks. handle om farve, hældning eller valg af materiale, der passer til den lokale byggestil.
+                  </p>
+                  
+                  <div className="ml-4">
+                    <h4 className="text-lg font-semibold text-gray-800">Sådan finder du ud af, om din ejendom i {city} er omfattet af en lokalplan:</h4>
+                    <ol className="list-decimal pl-6 space-y-1 mt-2">
+                      <li>Gå ind på <a href="https://www.plst.dk/plandatadk" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline">Plandata.dk</a></li>
+                      <li>Vælg {city} Kommune i øverste højre hjørne under "Kortudsnit" – eller indtast ejendommens adresse i feltet "Søg_adresse"</li>
+                      <li>Klik på markeringerne på kortet for at se, hvilke lokalplaner der gælder for netop din grund</li>
+                      <li>Åbn den relevante lokalplan i PDF-format</li>
+                      <li>Læs kravene til tag, som kan omhandle alt fra specifikke materialer til udformning</li>
+                    </ol>
+                  </div>
+                  
+                  <div className="mt-4 p-3 bg-gray-100 rounded-lg">
+                    <p className="italic">
+                      Eksempel: I visse områder af {city} kan der være krav om bestemte tagmaterialer eller farver for at bevare områdets særlige karakter.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="bg-gray-50 p-6 rounded-lg mb-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">3. Servitutter</h3>
+                  <p className="mb-3">
+                    En servitut er en tinglyst bestemmelse, der kan være knyttet til ejendommens matrikel. De er ikke så almindelige, når det gælder tage, men kan findes på fredede eller bevaringsværdige bygninger i {city}.
+                  </p>
+                  
+                  <div className="ml-4">
+                    <h4 className="text-lg font-semibold text-gray-800">Tjek for servitutter på din ejendom i {city}:</h4>
+                    <ol className="list-decimal pl-6 space-y-1 mt-2">
+                      <li>Gå til <a href="https://www.tinglysning.dk/tmv/landingpage" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline">Tinglysning.dk</a> og log på med NemID eller MitID.</li>
+                      <li>Søg efter din ejendom for at se, om der findes servitutter, der begrænser eller påvirker dit valg af tag.</li>
+                    </ol>
+                  </div>
+                </div>
+                
+                <div className="bg-brand-lightBlue p-6 rounded-lg mb-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Få professionel hjælp og spar tid</h3>
+                  <p className="mb-3">
+                    Selvom du kan orientere dig selv vedrørende Bygningsreglementet, lokalplaner og eventuelle servitutter, er det ofte en god idé at tale med {city} Kommunes teknik- og miljøforvaltning. De kan give dig rådgivning om lokale forhold. Derudover kan du med fordel få vejledning fra et erfarent tagfirma eller en uvildig byggetekniker, så du er sikker på, at alle juridiske krav bliver opfyldt.
+                  </p>
+                </div>
+                
+                <div className="bg-gray-100 p-6 rounded-lg">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Kort sagt:</h3>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>Bygningsreglementet kræver energibesparende foranstaltninger, herunder efterisolering af taget.</li>
+                    <li>Lokalplaner i {city} kan stille krav til valg af tagtype, farve eller stil.</li>
+                    <li>Servitutter kan sætte yderligere begrænsninger, især på fredede eller bevaringsværdige ejendomme i {city}.</li>
+                  </ul>
+                  <p className="mt-4">
+                    Ved at sætte dig ind i disse tre nøgleområder, undgår du dyre fejl og får en mere gnidningsfri tagrenovering i {city}. Samtidig sikrer du, at dit nye tag lever op til lovens krav og passer til både lokalområdet og eventuelle særlige servitutter.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-gray-50">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-white rounded-xl p-8 border border-brand-blue shadow-md">
+              <div className="flex flex-col md:flex-row items-center mb-6">
+                <a href="https://www.partner-ads.com/dk/klikbanner.php?partnerid=53649&bannerid=25692" target="_blank" rel="noopener noreferrer">
+                  <img 
+                    src="/lovable-uploads/a2dc3d3c-2ffd-4a00-967d-a9fb7dc4591e.png" 
+                    alt="3byggetilbud.dk" 
+                    className="h-16 w-auto mb-4 md:mb-0 md:mr-6"
+                  />
+                </a>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center md:text-left">
+                  Danmarks største formidler af byggeopgaver
+                </h2>
+              </div>
+              
+              <div className="space-y-4 text-gray-700">
+                <p>
+                  <a href="https://www.partner-ads.com/dk/klikbanner.php?partnerid=53649&bannerid=25692" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-semibold">3byggetilbud.dk</a> formidler årligt mellem 70.000 og 100.000 bygge- og renoveringsprojekter og er dermed Danmarks klart største formidler af byggeopgaver - også i {city}.
+                </p>
+                <p>
+                  Hos <a href="https://www.partner-ads.com/dk/klikbanner.php?partnerid=53649&bannerid=25692" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-semibold">3byggetilbud.dk</a> kan private boligejere, erhvervsdrivende og boligforeninger i {city} indhente 3 tilbud på ethvert byggeprojekt eller renoveringsopgave. 
+                </p>
+                <p>
+                  <a href="https://www.partner-ads.com/dk/klikbanner.php?partnerid=53649&bannerid=25692" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-semibold">3byggetilbud.dk</a> har et landsdækkende netværk af flere tusinde håndværkerfirmaer og har været i branchen for formidling af byggeopgaver siden år 2000.
+                </p>
+              </div>
+              
+              <div className="mt-6 text-center">
+                <CTAButton href={affiliateLink} variant="primary">
+                  Få 3 gratis og uforpligtende tilbud
+                </CTAButton>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section 
+        className="py-20 bg-cover bg-center shadow-inner" 
+        style={{ 
+          backgroundImage: "linear-gradient(rgba(14, 165, 233, 0.85), rgba(14, 165, 233, 0.9)), url(https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?q=80&w=2070&auto=format&fit=crop)", 
+          backgroundSize: "cover"
+        }}
+      >
+        <div className="container text-center text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Klar til at få tilbud på dit tagprojekt i {city}?
+          </h2>
+          <p className="text-xl opacity-90 max-w-2xl mx-auto mb-10">
+            Det tager kun få minutter at få 3 gratis tilbud fra kvalificerede håndværkere i {city} og omegn
+          </p>
+          <CTAButton 
+            href={affiliateLink} 
+            size="lg"
+            className="bg-white text-brand-blue hover:bg-gray-100 animate-pulse-soft shadow-lg"
+            trackConversion={true}
+          >
+            Bestil 3 uforpligtende tilbud
           </CTAButton>
         </div>
       </section>

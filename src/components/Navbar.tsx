@@ -144,6 +144,48 @@ const Navbar = () => {
                 >
                   Tagrenovering Kolding
                 </Link>
+                <Link 
+                  to="/tagrenovering-helsingor" 
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-lightBlue/40 hover:text-brand-blue transition-colors"
+                  onClick={() => setIsTagDropdownOpen(false)}
+                >
+                  Tagrenovering Helsingør
+                </Link>
+                <Link 
+                  to="/tagrenovering-herning" 
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-lightBlue/40 hover:text-brand-blue transition-colors"
+                  onClick={() => setIsTagDropdownOpen(false)}
+                >
+                  Tagrenovering Herning
+                </Link>
+                <Link 
+                  to="/tagrenovering-horsholm" 
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-lightBlue/40 hover:text-brand-blue transition-colors"
+                  onClick={() => setIsTagDropdownOpen(false)}
+                >
+                  Tagrenovering Hørsholm
+                </Link>
+                <Link 
+                  to="/tagrenovering-roskilde" 
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-lightBlue/40 hover:text-brand-blue transition-colors"
+                  onClick={() => setIsTagDropdownOpen(false)}
+                >
+                  Tagrenovering Roskilde
+                </Link>
+                <Link 
+                  to="/tagrenovering-silkeborg" 
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-lightBlue/40 hover:text-brand-blue transition-colors"
+                  onClick={() => setIsTagDropdownOpen(false)}
+                >
+                  Tagrenovering Silkeborg
+                </Link>
+                <Link 
+                  to="/tagrenovering-vejle" 
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-lightBlue/40 hover:text-brand-blue transition-colors"
+                  onClick={() => setIsTagDropdownOpen(false)}
+                >
+                  Tagrenovering Vejle
+                </Link>
               </div>
             </li>
             <li>
@@ -286,6 +328,60 @@ const Navbar = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Tagrenovering Kolding
+              </Link>
+            </div>
+            <div className="bg-gray-50 border-b">
+              <Link 
+                to="/tagrenovering-helsingor" 
+                className="block py-3 px-8 text-base text-gray-700 hover:text-brand-blue"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Tagrenovering Helsingør
+              </Link>
+            </div>
+            <div className="bg-gray-50 border-b">
+              <Link 
+                to="/tagrenovering-herning" 
+                className="block py-3 px-8 text-base text-gray-700 hover:text-brand-blue"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Tagrenovering Herning
+              </Link>
+            </div>
+            <div className="bg-gray-50 border-b">
+              <Link 
+                to="/tagrenovering-horsholm" 
+                className="block py-3 px-8 text-base text-gray-700 hover:text-brand-blue"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Tagrenovering Hørsholm
+              </Link>
+            </div>
+            <div className="bg-gray-50 border-b">
+              <Link 
+                to="/tagrenovering-roskilde" 
+                className="block py-3 px-8 text-base text-gray-700 hover:text-brand-blue"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Tagrenovering Roskilde
+              </Link>
+            </div>
+            <div className="bg-gray-50 border-b">
+              <Link 
+                to="/tagrenovering-silkeborg" 
+                className="block py-3 px-8 text-base text-gray-700 hover:text-brand-blue"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Tagrenovering Silkeborg
+              </Link>
+            </div>
+            <div className="bg-gray-50 border-b">
+              <Link 
+                to="/tagrenovering-vejle" 
+                className="block py-3 px-8 text-base text-gray-700 hover:text-brand-blue"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Tagrenovering Vejle
               </Link>
             </div>
             
