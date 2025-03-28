@@ -179,133 +179,134 @@ const Navbar = () => {
       </Container>
 
       {/* Mobile menu */}
-      {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-white md:hidden flex flex-col">
-          <div className="flex items-center justify-between px-6 py-4 border-b">
+      <div 
+        className={`fixed inset-0 z-[100] bg-white md:hidden ${isMobileMenuOpen ? 'translate-x-0 opacity-100 visible' : 'translate-x-full opacity-0 invisible'} transition-all duration-300 ease-in-out`}
+        style={{ height: '100vh', width: '100vw', overflowY: 'auto' }}
+      >
+        <div className="sticky top-0 flex items-center justify-between px-6 py-4 border-b bg-white">
+          <Link 
+            to="/" 
+            className="flex items-center space-x-2"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            <div className="bg-brand-blue/90 text-white p-1.5 rounded-md">
+              <Home className="h-4 w-4" />
+            </div>
+            <span className="text-lg font-bold bg-gradient-to-r from-brand-blue to-blue-600 bg-clip-text text-transparent">
+              Renoverbolig.dk
+            </span>
+          </Link>
+          <button 
+            onClick={toggleMobileMenu}
+            aria-label="Close menu"
+            className="p-2 rounded-full hover:bg-gray-100"
+          >
+            <X className="h-6 w-6 text-gray-700" />
+          </button>
+        </div>
+
+        <nav className="pb-20">
+          <div className="flex flex-col">
             <Link 
               to="/" 
-              className="flex items-center space-x-2"
+              className="block py-4 px-6 text-lg font-medium text-gray-800 hover:text-brand-blue border-b"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <div className="bg-brand-blue/90 text-white p-1.5 rounded-md">
-                <Home className="h-4 w-4" />
-              </div>
-              <span className="text-lg font-bold bg-gradient-to-r from-brand-blue to-blue-600 bg-clip-text text-transparent">
-                Renoverbolig.dk
-              </span>
+              Hjem
             </Link>
-            <button 
-              onClick={toggleMobileMenu}
-              aria-label="Close menu"
-              className="p-1"
-            >
-              <X className="h-6 w-6 text-gray-700" />
-            </button>
-          </div>
-
-          <nav className="flex-1 overflow-y-auto">
-            <div className="grid grid-cols-1 gap-0 p-0">
+            
+            <div className="border-b">
               <Link 
-                to="/" 
-                className="block py-3 px-6 text-lg font-medium text-gray-800 hover:text-brand-blue border-b"
+                to="/tagrenovering" 
+                className="block py-4 px-6 text-lg font-medium text-gray-800 hover:text-brand-blue"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Hjem
-              </Link>
-              
-              <div className="border-b">
-                <Link 
-                  to="/tagrenovering" 
-                  className="block py-3 px-6 text-lg font-medium text-gray-800 hover:text-brand-blue"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Tagrenovering
-                </Link>
-              </div>
-              
-              <div className="bg-gray-50 border-b">
-                <Link 
-                  to="/tagrenovering-kobenhavn" 
-                  className="block py-2.5 px-8 text-base text-gray-700 hover:text-brand-blue"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Tagrenovering København
-                </Link>
-              </div>
-              <div className="bg-gray-50 border-b">
-                <Link 
-                  to="/tagrenovering-aarhus" 
-                  className="block py-2.5 px-8 text-base text-gray-700 hover:text-brand-blue"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Tagrenovering Aarhus
-                </Link>
-              </div>
-              <div className="bg-gray-50 border-b">
-                <Link 
-                  to="/tagrenovering-odense" 
-                  className="block py-2.5 px-8 text-base text-gray-700 hover:text-brand-blue"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Tagrenovering Odense
-                </Link>
-              </div>
-              <div className="bg-gray-50 border-b">
-                <Link 
-                  to="/tagrenovering-aalborg" 
-                  className="block py-2.5 px-8 text-base text-gray-700 hover:text-brand-blue"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Tagrenovering Aalborg
-                </Link>
-              </div>
-              <div className="bg-gray-50 border-b">
-                <Link 
-                  to="/tagrenovering-esbjerg" 
-                  className="block py-2.5 px-8 text-base text-gray-700 hover:text-brand-blue"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Tagrenovering Esbjerg
-                </Link>
-              </div>
-              <div className="bg-gray-50 border-b">
-                <Link 
-                  to="/tagrenovering-randers" 
-                  className="block py-2.5 px-8 text-base text-gray-700 hover:text-brand-blue"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Tagrenovering Randers
-                </Link>
-              </div>
-              <div className="bg-gray-50 border-b">
-                <Link 
-                  to="/tagrenovering-kolding" 
-                  className="block py-2.5 px-8 text-base text-gray-700 hover:text-brand-blue"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Tagrenovering Kolding
-                </Link>
-              </div>
-              
-              <Link 
-                to="/facaderenovering" 
-                className="block py-3 px-6 text-lg font-medium text-gray-800 hover:text-brand-blue border-b"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Facaderenovering
-              </Link>
-              
-              <Link 
-                to="/vinduer" 
-                className="block py-3 px-6 text-lg font-medium text-gray-800 hover:text-brand-blue border-b"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Vinduer
+                Tagrenovering
               </Link>
             </div>
-          </nav>
-        </div>
-      )}
+            
+            <div className="bg-gray-50 border-b">
+              <Link 
+                to="/tagrenovering-kobenhavn" 
+                className="block py-3 px-8 text-base text-gray-700 hover:text-brand-blue"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Tagrenovering København
+              </Link>
+            </div>
+            <div className="bg-gray-50 border-b">
+              <Link 
+                to="/tagrenovering-aarhus" 
+                className="block py-3 px-8 text-base text-gray-700 hover:text-brand-blue"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Tagrenovering Aarhus
+              </Link>
+            </div>
+            <div className="bg-gray-50 border-b">
+              <Link 
+                to="/tagrenovering-odense" 
+                className="block py-3 px-8 text-base text-gray-700 hover:text-brand-blue"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Tagrenovering Odense
+              </Link>
+            </div>
+            <div className="bg-gray-50 border-b">
+              <Link 
+                to="/tagrenovering-aalborg" 
+                className="block py-3 px-8 text-base text-gray-700 hover:text-brand-blue"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Tagrenovering Aalborg
+              </Link>
+            </div>
+            <div className="bg-gray-50 border-b">
+              <Link 
+                to="/tagrenovering-esbjerg" 
+                className="block py-3 px-8 text-base text-gray-700 hover:text-brand-blue"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Tagrenovering Esbjerg
+              </Link>
+            </div>
+            <div className="bg-gray-50 border-b">
+              <Link 
+                to="/tagrenovering-randers" 
+                className="block py-3 px-8 text-base text-gray-700 hover:text-brand-blue"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Tagrenovering Randers
+              </Link>
+            </div>
+            <div className="bg-gray-50 border-b">
+              <Link 
+                to="/tagrenovering-kolding" 
+                className="block py-3 px-8 text-base text-gray-700 hover:text-brand-blue"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Tagrenovering Kolding
+              </Link>
+            </div>
+            
+            <Link 
+              to="/facaderenovering" 
+              className="block py-4 px-6 text-lg font-medium text-gray-800 hover:text-brand-blue border-b"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Facaderenovering
+            </Link>
+            
+            <Link 
+              to="/vinduer" 
+              className="block py-4 px-6 text-lg font-medium text-gray-800 hover:text-brand-blue border-b"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Vinduer
+            </Link>
+          </div>
+        </nav>
+      </div>
     </header>
   );
 };
