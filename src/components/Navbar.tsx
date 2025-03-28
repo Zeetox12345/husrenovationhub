@@ -180,7 +180,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-white/95 backdrop-blur-md pt-24 pb-6 px-6 md:hidden">
+        <div className="fixed inset-0 z-40 bg-white pt-20 pb-6 overflow-y-auto md:hidden">
           <div className="absolute right-6 top-6">
             <button 
               onClick={toggleMobileMenu}
@@ -190,8 +190,8 @@ const Navbar = () => {
             </button>
           </div>
 
-          <nav>
-            <ul className="flex flex-col space-y-6">
+          <nav className="px-6">
+            <ul className="flex flex-col space-y-4">
               <li>
                 <Link 
                   to="/" 
@@ -217,7 +217,7 @@ const Navbar = () => {
               <li className="pl-4 pt-0">
                 <Link 
                   to="/tagrenovering-kobenhavn" 
-                  className="text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors"
+                  className="block text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Tagrenovering København
@@ -226,7 +226,7 @@ const Navbar = () => {
               <li className="pl-4">
                 <Link 
                   to="/tagrenovering-aarhus" 
-                  className="text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors"
+                  className="block text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Tagrenovering Aarhus
@@ -235,7 +235,7 @@ const Navbar = () => {
               <li className="pl-4">
                 <Link 
                   to="/tagrenovering-odense" 
-                  className="text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors"
+                  className="block text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Tagrenovering Odense
@@ -244,7 +244,7 @@ const Navbar = () => {
               <li className="pl-4">
                 <Link 
                   to="/tagrenovering-aalborg" 
-                  className="text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors"
+                  className="block text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Tagrenovering Aalborg
@@ -253,7 +253,7 @@ const Navbar = () => {
               <li className="pl-4">
                 <Link 
                   to="/tagrenovering-esbjerg" 
-                  className="text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors"
+                  className="block text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Tagrenovering Esbjerg
@@ -262,16 +262,16 @@ const Navbar = () => {
               <li className="pl-4">
                 <Link 
                   to="/tagrenovering-randers" 
-                  className="text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors"
+                  className="block text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Tagrenovering Randers
                 </Link>
               </li>
-              <li className="pl-4 mb-6">
+              <li className="pl-4 mb-4">
                 <Link 
                   to="/tagrenovering-kolding" 
-                  className="text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors"
+                  className="block text-lg font-medium text-gray-700 hover:text-brand-blue transition-colors py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Tagrenovering Kolding
@@ -281,7 +281,7 @@ const Navbar = () => {
               <li>
                 <Link 
                   to="/facaderenovering" 
-                  className="text-xl font-medium text-gray-800 hover:text-brand-blue transition-colors"
+                  className="block text-xl font-medium text-gray-800 hover:text-brand-blue transition-colors py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Facaderenovering
@@ -290,7 +290,7 @@ const Navbar = () => {
               <li>
                 <Link 
                   to="/vinduer" 
-                  className="text-xl font-medium text-gray-800 hover:text-brand-blue transition-colors"
+                  className="block text-xl font-medium text-gray-800 hover:text-brand-blue transition-colors py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Vinduer
