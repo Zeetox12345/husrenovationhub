@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import CTAButton from "@/components/CTAButton";
+import TrustSignals from "@/components/TrustSignals";
+import PartnerSection from "@/components/PartnerSection";
 import { Helmet } from "react-helmet";
 
 const TagrenoveringOdense = () => {
@@ -14,9 +16,9 @@ const TagrenoveringOdense = () => {
   return (
     <>
       <Helmet>
-        <title>Nyt tag Odense 2025 - Den komplette guide til tagrenovering</title>
-        <meta name="description" content={`Få indsigt i priser og muligheder for tagrenovering i ${city}. Komplet guide til tagtyper, vedligeholdelse og valg af professionelle tageksperter i ${city}.`} />
-        <meta name="keywords" content={`tagrenovering ${cityLowercase}, nyt tag ${cityLowercase}, tagarbejde ${cityLowercase}, tagudskiftning ${cityLowercase}, tagreparation ${cityLowercase}, tageksperter ${cityLowercase}`} />
+        <title>Nyt tag i {city} 2025 - Den komplette guide til tagrenovering</title>
+        <meta name="description" content={`Få indsigt i priser, materialer og lovkrav ved tagrenovering i ${city}. Komplet guide til tagtyper, vedligeholdelse og valg af professionelle tageksperter i ${city}.`} />
+        <meta name="keywords" content={`tagrenovering ${cityLowercase}, nyt tag ${cityLowercase}, tagarbejde ${cityLowercase}, tagudskiftning ${cityLowercase}, tagreparation ${cityLowercase}, tageksperter ${cityLowercase}, tagløsninger ${cityLowercase}`} />
         <link rel="canonical" href={`https://husrenovationhub.dk/tagrenovering-${cityLowercase}`} />
       </Helmet>
 
@@ -36,7 +38,7 @@ const TagrenoveringOdense = () => {
         {/* Content overlay */}
         <div className="relative z-10 h-full flex flex-col justify-center items-center px-4 text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4 max-w-4xl">
-            Hvad koster et nyt tag i {city}? Komplet guide til tagrenovering i 2025
+            Hvad koster et nyt tag i {city}? Komplet guide til tagrenovering for alle tagtyper i 2025
           </h1>
         </div>
       </div>
@@ -66,24 +68,47 @@ const TagrenoveringOdense = () => {
                     </svg>
                     Hvad koster et nyt tag i {city}?
                   </a>
-                  <a href="#tagtyper" className="text-brand-blue hover:underline flex items-center">
+                  <a href="#kvadratmeterpris" className="text-brand-blue hover:underline flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                    Kvadratmeterpriser i {city}
+                  </a>
+                  <a href="#prisafgoer" className="text-brand-blue hover:underline flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg>
+                    Hvad afgør prisen?
+                  </a>
+                  <a href="#vaelg-tag" className="text-brand-blue hover:underline flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>
-                    Populære tagtyper i {city}
+                    Tagbelægningens bæreevne
                   </a>
-                  <a href="#lokaleforhold" className="text-brand-blue hover:underline flex items-center">
+                  <a href="#tjekstand" className="text-brand-blue hover:underline flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    Særlige forhold i {city}
+                    Tjek af tagets stand
                   </a>
-                  <a href="#haandvaerkere" className="text-brand-blue hover:underline flex items-center">
+                  <a href="#utaetheder" className="text-brand-blue hover:underline flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
                     </svg>
-                    Find håndværkere i {city}
+                    Skader og utætheder
+                  </a>
+                  <a href="#isolering" className="text-brand-blue hover:underline flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                    </svg>
+                    Isolering af taget
+                  </a>
+                  <a href="#loveregler" className="text-brand-blue hover:underline flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+                    </svg>
+                    Love og regler i {city}
                   </a>
                 </div>
               </details>
@@ -95,10 +120,10 @@ const TagrenoveringOdense = () => {
               En tagrenovering er ofte et af de mest omfattende projekter, du kan kaste dig ud i som boligejer i {city}.
             </p>
             <p>
-              Ikke alene kan prisen let overstige 100.000 kroner for en gennemsnitlig familiebolig, men processen indebærer også en række valg om både materialer, isoleringsmuligheder og æstetik, der passer til den fynske byggestil og vejrforhold.
+              Ikke alene kan prisen let overstige 100.000 kroner, men processen indebærer også en række valg om både materialer, isoleringsmuligheder og æstetik, der er relevante for boligejere i {city}.
             </p>
             <p>
-              Alligevel kan tagrenoveringen hurtigt vise sig at være en fornuftig investering for {city}-boligejere, da den både reducerer varmeregningen og øger boligens samlede værdi på det attraktive fynske boligmarked.
+              Alligevel kan tagrenoveringen hurtigt vise sig at være en fornuftig investering for husejere i {city}, da den både reducerer varmeregningen og øger boligens samlede værdi på det lokale boligmarked.
             </p>
           </div>
           
@@ -145,7 +170,7 @@ const TagrenoveringOdense = () => {
                 <a href={affiliateLink} target="_blank" rel="noopener noreferrer" className="block h-full">
                   <img 
                     src="/lovable-uploads/3byggetilbudbillede.jpg" 
-                    alt={`Tagrenovering i ${city}`}
+                    alt={`Tagrenovering i ${city} med 3byggetilbud.dk`} 
                     className="w-full h-full object-cover"
                   />
                 </a>
