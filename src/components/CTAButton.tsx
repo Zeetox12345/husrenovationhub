@@ -30,7 +30,7 @@ const CTAButton = forwardRef<HTMLAnchorElement, CTAButtonProps>(
           href={href}
           onClick={handleClick}
           className={cn(
-            "inline-flex items-center justify-center rounded-lg font-medium transition-all",
+            "inline-flex items-center justify-center rounded-lg font-medium transition-all capitalize",
             "focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2",
             "shadow-sm hover:shadow-md transform hover:-translate-y-0.5 active:translate-y-0",
             {
