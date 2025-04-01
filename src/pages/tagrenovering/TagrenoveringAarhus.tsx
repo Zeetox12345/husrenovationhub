@@ -36,7 +36,7 @@ const TagrenoveringAarhus = () => {
         </div>
         
         {/* Content overlay */}
-        <div className="relative z-10 h-full flex flex-col justify-center items-center px-4 text-center">
+        <div className="relative z-10 h-full flex flex-col justify-center items-center px-4 text-center pt-10 md:pt-0">
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-2 md:mb-4 max-w-4xl">
             Hvad koster et nyt tag i {city}? Komplet guide til tagrenovering for alle tagtyper i 2025
           </h1>
