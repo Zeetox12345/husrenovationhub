@@ -23,7 +23,7 @@ const TagrenoveringAalborg = () => {
       </Helmet>
 
       {/* Full-width hero section with image background */}
-      <div className="relative w-full h-[500px] mb-10">
+      <div className="relative w-full h-[250px] md:h-[500px] mb-4 md:mb-6">
         {/* Hero image */}
         <div className="absolute inset-0 w-full h-full">
           <img 
@@ -36,10 +36,66 @@ const TagrenoveringAalborg = () => {
         </div>
         
         {/* Content overlay */}
-        <div className="relative z-10 h-full flex flex-col justify-center items-center px-4 text-center">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4 max-w-4xl">
+        <div className="relative z-10 h-full flex flex-col justify-center items-center px-4 text-center pt-10 md:pt-0">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-2 md:mb-4 max-w-4xl">
             Hvad koster et nyt tag i {city}? Komplet guide til tagrenovering for alle tagtyper i 2025
           </h1>
+        </div>
+      </div>
+
+      {/* Moved partner section to top of page */}
+      <div className="container mb-4">
+        <div className="max-w-3xl mx-auto">
+          {/* Redesigned partner section with CTA buttons */}
+          <div className="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+            <div className="flex flex-col md:flex-row">
+              {/* Partner info column */}
+              <div className="md:w-1/2 p-4 flex flex-col justify-between bg-gradient-to-br from-white to-gray-100">
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Få gratis rådgivning og 3 tilbud på nyt tag</h3>
+                  <p className="text-gray-700 mb-2">Vi anbefaler vores samarbejdspartner <a href={affiliateLink} className="text-brand-blue font-semibold hover:underline">3byggetilbud.dk</a></p>
+                </div>
+                
+                <div className="mb-3">
+                  <ul className="space-y-1">
+                    <li className="flex items-start">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-sm">3 gratis tilbud fra forskellige tagfirmaer i {city}</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-sm">Erfaren partner med over 700.000 formidlede opgaver</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-sm">100% uforpligtende med hurtig respons</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <CTAButton href={affiliateLink} size="lg" className="w-full animate-pulse-soft shadow-md">
+                  Få 3 gratis tilbud på nyt tag
+                </CTAButton>
+              </div>
+              
+              {/* Partner image column - simplified to only show the image with logo */}
+              <div className="md:w-1/2 relative">
+                <a href={affiliateLink} target="_blank" rel="noopener noreferrer" className="block h-full">
+                  <img 
+                    src="/lovable-uploads/3byggetilbudbillede.jpg" 
+                    alt={`Tagrenovering i ${city} med 3byggetilbud.dk`}
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
